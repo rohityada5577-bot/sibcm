@@ -1,0 +1,102 @@
+/* Core Section Dark Foundation Canvas */
+.industry-hero {
+  background-color: #06060c !important; /* Pitch Dark layout base */
+  min-height: 80vh;
+  z-index: 1;
+}
+
+/* Geometric Grid Mesh System and Ambient Backlighting */
+.ind-grid-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background-image: 
+    linear-gradient(to right, #111122 1px, transparent 1px),
+    linear-gradient(to bottom, #111122 1px, transparent 1px);
+  background-size: 3.5rem 3.5rem;
+  mask-image: radial-gradient(ellipse at 80% 20%, white, transparent 75%);
+  -webkit-mask-image: radial-gradient(ellipse at 80% 20%, white, transparent 75%);
+  opacity: 0.6;
+}
+.ind-ambient-flare {
+  position: absolute;
+  top: -10%;
+  right: -5%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(168, 85, 247, 0.05) 0%, transparent 70%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Typography Gradient Rules */
+.ind-text-glow {
+  background: linear-gradient(to right, #818cf8, #c084fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text-muted-ind { color: #52526b; }
+.lead-ind { font-size: 1.15rem; line-height: 1.65; }
+.small-ind { font-size: 0.95rem; line-height: 1.6; }
+.x-small-tech { font-size: 0.775rem; line-height: 1.5; }
+.border-dark-custom { border-color: #16162a !important; }
+
+/* Left Section Floating Badge Component */
+.industry-badge {
+  background-color: rgba(99, 102, 241, 0.12) !important;
+  color: #818cf8 !important;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: 1px solid rgba(99, 102, 241, 0.25);
+  letter-spacing: 0.02em;
+}
+.live-radar-dot {
+  width: 6px;
+  height: 6px;
+  background-color: #818cf8;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 4px;
+  transform: translateY(-1px);
+}
+
+/* Right Section Terminal Block Canvas */
+.tech-terminal-card {
+  background-color: #0b0b14 !important;
+  box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.7);
+}
+.terminal-cross-mark {
+  color: #1c1c35;
+  font-size: 0.8rem;
+  cursor: default;
+}
+.tech-badge {
+  background-color: rgba(168, 85, 247, 0.12) !important;
+  color: #c084fc !important;
+  font-size: 0.725rem;
+  font-weight: 700;
+}
+
+/* Channels Rows Layout blocks inside Terminal */
+.terminal-channel-row {
+  background-color: #07070d;
+  border: 1px solid #141424;
+  transition: transform 0.25s ease, border-color 0.25s ease;
+}
+.terminal-channel-row:hover {
+  transform: translateX(4px);
+  border-color: rgba(129, 140, 248, 0.3);
+}
+
+/* Numeric Side Avatars */
+.channel-tech-avatar {
+  background-color: #111122;
+  border: 1px solid #1c1c35;
+  color: #64748b;
+  font-size: 0.75rem;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,29 @@
+:root {
+  --sib-blue: #1f6fb8;
+  --sib-blue-dark: #155a96;
+  --sib-blue-light: #5ca7e6;
+
+  --sib-red: #e53935;
+  --sib-red-dark: #c62828;
+
+  --sib-cyan: #2aa9e0;
+
+  --sib-white: #ffffff;
+
+  --sib-text: #1e293b;
+  --sib-text-light: #64748b;
+
+  --sib-gradient: linear-gradient(
+    135deg,
+    #1f6fb8 0%,
+    #2aa9e0 50%,
+    #e53935 100%
+  );
+
+  --sib-gradient-light: linear-gradient(
+    135deg,
+    rgba(31,111,184,0.08),
+    rgba(42,169,224,0.08),
+    rgba(229,57,53,0.08)
+  );
+}

@@ -1,0 +1,453 @@
+/* Core Section Layout Base */
+.stories-hero {
+  background-color: #06060c !important; /* Pitch Deep Dark foundation */
+  min-height: 70vh;
+  z-index: 1;
+}
+
+/* Background grid network and ambient tracking light flare */
+.hero-matrix-mesh {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background-image: 
+    linear-gradient(to right, #111124 1px, transparent 1px),
+    linear-gradient(to bottom, #111124 1px, transparent 1px);
+  background-size: 4rem 4rem;
+  opacity: 0.6;
+  mask-image: radial-gradient(ellipse at center, white, transparent 80%);
+  -webkit-mask-image: radial-gradient(ellipse at center, white, transparent 80%);
+}
+.hero-radial-flare {
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 900px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.08) 0%, transparent 70%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Typography Gradient Elements */
+.hero-gradient-title {
+  background: linear-gradient(to bottom, #ffffff, #cbd5e1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.accent-text-glow {
+  background: linear-gradient(to right, #818cf8, #c084fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Micro-Typography & Utilities */
+.text-muted-hero { color: #52526b; }
+.text-indigo-light { color: #a5b4fc; }
+.max-w-2xl { max-width: 42rem; }
+.max-w-3xl { max-width: 48rem; }
+.lead-hero {
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+.x-small-text {
+  font-size: 0.775rem;
+  line-height: 1.5;
+}
+
+
+
+/* Dynamic Entrance Pill Badge */
+.framework-proof-badge {
+  background-color: rgba(99, 102, 241, 0.12) !important;
+  color: #818cf8 !important;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: 1px solid rgba(99, 102, 241, 0.25);
+  letter-spacing: 0.02em;
+}
+.live-pulse-dot {
+  width: 6px;
+  height: 6px;
+  background-color: #818cf8;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 4px;
+  transform: translateY(-1px);
+}
+
+/* Strategic Dashboard Deployment Box for Content Editors */
+.production-notice-box {
+  background-color: #0b0b14;
+  border: 1px solid #1c1c32;
+}
+.production-notice-box.border-dashed {
+  border-style: dashed !important;
+}
+.info-icon {
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+
+/* Core Section Dark Foundation Canvas */
+.framework-section {
+  background-color: #06060c !important; /* Pitch Pitch Black dark layout choice */
+  z-index: 1;
+}
+
+/* Structural Tech Grid Overlays and ambient light flares */
+.framework-mesh-grid {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background-image: 
+    linear-gradient(to right, #121226 1px, transparent 1px),
+    linear-gradient(to bottom, #121226 1px, transparent 1px);
+  background-size: 3.5rem 3.5rem;
+  mask-image: radial-gradient(ellipse at center, white, transparent 80%);
+  -webkit-mask-image: radial-gradient(ellipse at center, white, transparent 80%);
+  opacity: 0.6;
+}
+.framework-ambient-flare {
+  position: absolute;
+  bottom: -30%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.05) 0%, transparent 70%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Typography Base Sizing and variables */
+.text-muted-framework { color: #52526b; }
+.text-indigo-light { color: #818cf8; }
+.text-purple-light { color: #c084fc; }
+.max-w-3xl { max-width: 48rem; }
+.lead-framework {
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+.line-height-relaxed {
+  line-height: 1.6;
+}
+.xs-text { font-size: 0.75rem; font-weight: 600; }
+.small-tech-text { font-size: 0.7rem; letter-spacing: 0.02em; }
+.uppercase { text-transform: uppercase; }
+
+/* Section Header Badge Pill component */
+.strategy-pill-badge {
+  background-color: rgba(99, 102, 241, 0.12) !important;
+  color: #818cf8 !important;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border: 1px solid rgba(99, 102, 241, 0.25);
+  letter-spacing: 0.02em;
+}
+
+/* Indivdual Card Layout Core */
+.bg-slate-900 { background-color: #0c0c16 !important; }
+.border-dark-custom { border: 1px solid #16162a !important; }
+
+.framework-block-card {
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+/* Micro Icon boxes */
+.pillar-avatar-icon {
+  width: 36px;
+  height: 36px;
+  background-color: #111122;
+  border: 1px solid #1c1c35;
+  font-size: 1rem;
+}
+
+/* Small tech detail crosshairs on card edges */
+.corner-accent-mark {
+  color: #1c1c35;
+  font-size: 0.8rem;
+  user-select: none;
+  transition: color 0.3s ease;
+}
+.framework-block-card:hover .corner-accent-mark {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* Dynamic Interactive Laser Neon Glow Adjusters (Activates on Mouse Hover) */
+.framework-block-card.glow-pink {
+  border-color: rgba(244, 114, 182, 0.35) !important;
+  box-shadow: 0 10px 30px -10px rgba(244, 114, 182, 0.15);
+}
+.framework-block-card.glow-indigo {
+  border-color: rgba(99, 102, 241, 0.35) !important;
+  box-shadow: 0 10px 30px -10px rgba(99, 102, 241, 0.15);
+}
+.framework-block-card.glow-purple {
+  border-color: rgba(168, 85, 247, 0.35) !important;
+  box-shadow: 0 10px 30px -10px rgba(168, 85, 247, 0.15);
+}
+.framework-block-card.glow-blue {
+  border-color: rgba(59, 130, 246, 0.35) !important;
+  box-shadow: 0 10px 30px -10px rgba(59, 130, 246, 0.15);
+}
+
+/* Bottom Callout Layout elements overrides */
+.framework-footer-callout {
+  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.5);
+}
+.arrow-shift {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+.group-arrow:hover .arrow-shift {
+  transform: translateX(4px);
+}
+
+/* Core Layout Container (Warm Light Alabaster Canvas) */
+.gallery-case-section {
+  background-color: #faf9f6 !important; /* Soft warm off-white background */
+  color: #1c1917;
+}
+
+/* Serif Font Integration */
+.text-serif {
+  font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+}
+
+/* Base Typographical Colors and Rules */
+.text-slate-900 {
+  color: #1c1917 !important;
+}
+.text-indigo-accent {
+  color: #4f46e5 !important; /* Rich Indigo Accent color */
+}
+.text-muted-gallery {
+  color: #57534e;
+}
+.gallery-case-num {
+  color: #a8a29e;
+  font-size: 0.85rem;
+}
+.gallery-case-supertext {
+  color: #78716c;
+  letter-spacing: 0.1em;
+}
+
+/* Structural Break Lines and Alignment Layouts */
+.border-gallery-light {
+  border-color: #e7e5e4 !important;
+}
+
+/* Body and Paragraph Sizing rules */
+.gallery-case-body {
+  font-size: 1rem;
+  line-height: 1.65;
+}
+.x-small {
+  font-size: 0.725rem;
+  letter-spacing: 0.02em;
+}
+.line-height-tight {
+  line-height: 1.4;
+}
+
+/* Clean Metrics Text Scaling Rules */
+.gallery-stat-block .display-4 {
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  color: #1c1917;
+}
+
+/* Responsive Structural Adjustments for Large Breakpoints */
+@media (min-width: 992px) {
+  .border-start-lg {
+    border-start: 1px solid transparent;
+    border-left: 1px solid #e7e5e4 !important;
+  }
+}
+
+
+/* Core Newspaper Canvas (Clean Stark Light Background) */
+.newspaper-section {
+  background-color: #fbfbfb !important; /* Flat stark editorial white contrast */
+  color: #111111;
+}
+
+/* Serif Detail Class overrides */
+.text-serif {
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+/* Base Typographical Elements */
+.text-slate-900 {
+  color: #111111 !important;
+}
+.text-muted-news {
+  color: #4b5563;
+}
+.text-indigo-news {
+  color: #3b82f6 !important; /* Bold Royal/Corporate Blue Accent */
+}
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* Structural Thick Layout Dividers */
+.border-top-thick {
+  border-top: 4px solid #111111 !important; /* Thick geometric structural cap */
+}
+.border-top-thin {
+  border-top: 1px solid #e5e7eb !important;
+}
+
+/* Left Narrative Section Details */
+.news-marker {
+  font-size: 0.8rem;
+  font-weight: 900;
+  background-color: #f3f4f6;
+  padding: 0.2rem 0.5rem;
+  border-left: 3px solid #ef4444; /* Alert Pinkish Red Marker Indicator */
+}
+.news-marker.strategy {
+  border-left-color: #3b82f6; /* Blue strategy marker */
+}
+.news-body-text {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  padding-left: 0.25rem;
+}
+
+/* Right Metrics Section Column Data Blocks */
+.news-stat-value {
+  font-size: 3.5rem;
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+}
+.news-stat-label {
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  margin-top: 0.25rem;
+  margin-bottom: 0.15rem;
+}
+.news-stat-sub {
+  line-height: 1.4;
+}
+
+/* Desktop Responsive Section Dividing Columns */
+@media (min-width: 992px) {
+  .border-left-news {
+    border-left: 1px solid #e5e7eb !important; /* Vertical column divider line */
+  }
+}
+
+
+/* Core Layout Canvas (Stark, Crisp Light Slate Background Layer) */
+.roi-matrix-wrapper {
+  background-color: #fafbfc !important; /* Premium polished light silver/white texture */
+  color: #0f172a;
+}
+
+/* Base Typographical Elements */
+.text-slate-900 {
+  color: #0f172a !important;
+}
+.text-muted-matrix {
+  color: #475569;
+}
+.small-lead {
+  font-size: 0.975rem;
+  line-height: 1.6;
+}
+.line-height-relaxed {
+  line-height: 1.65;
+}
+.x-small {
+  font-size: 0.725rem;
+  letter-spacing: 0.02em;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* Structural Break Stroke Lines */
+.border-light-matrix {
+  border-color: #e2e8f0 !important;
+}
+
+/* Luxury Section Badges */
+.matrix-badge {
+  background-color: #f1f5f9;
+  color: #4f46e5; /* Royal Indigo */
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  padding: 0.3rem 0.7rem;
+  border-radius: 50rem;
+  border: 1px solid #e2e8f0;
+}
+.matrix-badge.purple {
+  background-color: #f5f3ff;
+  color: #7c3aed; /* Violet */
+  border-color: #ddd6fe;
+}
+
+/* ROI Channel Block Cards */
+.roi-analytic-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.01), 0 2px 4px -1px rgba(0, 0, 0, 0.01);
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+.roi-analytic-card:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.03);
+}
+.text-indigo-matrix {
+  color: #4f46e5;
+}
+
+/* Progress micro indicator rules */
+.matrix-progress-track {
+  background-color: #f1f5f9;
+  height: 4px;
+  width: 100%;
+}
+.matrix-progress-fill {
+  background: linear-gradient(to right, #4f46e5, #7c3aed);
+  height: 100%;
+}
+
+/* Before and After Separator Box rules */
+.before-after-split-box {
+  background-color: #ffffff;
+}
+.split-line {
+  top: 15%;
+  bottom: 15%;
+  left: 50%;
+  width: 1px;
+  background-color: #e2e8f0;
+  transform: translateX(-50%);
+}
+.text-danger { color: #ef4444 !important; }
+.text-success { color: #10b981 !important; }
+
+/* Right Column Index Rows Layout */
+.comparison-index-row {
+  background-color: #ffffff;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+.comparison-index-row:hover {
+  border-color: #cbd5e1 !important;
+}
+.comparison-scale-blast {
+  background-color: #f8fafc;
+  font-size: 0.9rem;
+  border: 1px solid #e2e8f0;
+}

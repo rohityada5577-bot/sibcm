@@ -1,0 +1,96 @@
+"use client";
+
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import "./about.css";
+
+export default function AboutSection() {
+  const titleRef = useRef(null);
+  const textRef = useRef(null);
+  const cardRef = useRef(null);
+
+  useEffect(() => {
+    gsap.from(titleRef.current, {
+      y: 100,
+      opacity: 0,
+      duration: 1.2,
+      ease: "power4.out",
+    });
+
+    gsap.from(textRef.current, {
+      y: 60,
+      opacity: 0,
+      duration: 1,
+      delay: 0.3,
+      ease: "power3.out",
+    });
+
+    gsap.fromTo(
+  cardRef.current,
+  {
+    x: 120,
+    opacity: 0,
+  },
+  {
+    x: 0,
+    opacity: 1,
+    duration: 1.2,
+    delay: 0.4,
+    ease: "power4.out",
+  }
+);
+  }, []);
+
+  return (
+    <section className="about-section">
+
+      <div className="orb orb-1"></div>
+      <div className="orb orb-2"></div>
+
+      <div className="container">
+
+        <div className="row align-items-center g-5">
+
+          <div className="col-lg-6">
+
+            <span className="about-badge">
+              OUR STORY
+            </span>
+
+            <h2 ref={titleRef} className="about-title">
+             About Our Conference Growth 
+              <span> Marketing Agency</span>
+            </h2>
+
+         
+
+          </div>
+
+          <div className="col-lg-6">
+
+            <div ref={cardRef} className="about-card">
+
+              <div className="comparison-box old-way">
+               
+                <p>
+                 We built this agency for one reason: conferences were being underserved. The most valuable industry events, the ones that bring together the sharpest minds in healthcare, technology, finance, and beyond, were being marketed like commodity products. Generic ad campaigns. Spray-and-pray emails. Zero strategy
+                </p>
+              </div>
+
+              <div className="comparison-box our-way">
+                
+                <p>
+                 We decided to do it differently. From day one, our entire agency has been structured around one goal: helping conferences fill seats with the right people. Not impressions. Not clicks. Registrations.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  );
+}

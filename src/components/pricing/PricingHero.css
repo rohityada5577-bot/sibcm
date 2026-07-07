@@ -1,0 +1,324 @@
+/* Base Section Setup */
+.pricing-hero {
+  background-color: #0f172a; /* deep slate dark color */
+  min-height: 60vh;
+  z-index: 1;
+}
+
+/* Ambient glow bubbles behind text */
+.pricing-hero-bg-glows {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  overflow: hidden;
+  pointer-events: none;
+}
+.pricing-hero-bg-glows::before {
+  content: "";
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1000px;
+  height: 600px;
+  background: linear-gradient(to right, #6366f1, #a855f7);
+  opacity: 0.15;
+  filter: blur(120px);
+  mask-image: radial-gradient(ellipse at top, white, transparent 70%);
+  -webkit-mask-image: radial-gradient(ellipse at top, white, transparent 70%);
+}
+
+/* Technical Tech Grid Overlay */
+.pricing-hero-grid-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image: 
+    linear-gradient(to right, #1e293b 1px, transparent 1px),
+    linear-gradient(to bottom, #1e293b 1px, transparent 1px);
+  background-size: 4rem 4rem;
+  mask-image: radial-gradient(ellipse at center, white, transparent 80%);
+  -webkit-mask-image: radial-gradient(ellipse at center, white, transparent 80%);
+  opacity: 0.4;
+}
+
+/* Badge styling & flashing ambient dot */
+.pricing-badge {
+  background-color: rgba(99, 102, 241, 0.1);
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  color: #818cf8;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.badge-pulse-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #818cf8;
+  animation: pulse-animation 2s infinite;
+}
+@keyframes pulse-animation {
+  0% { transform: scale(0.95); opacity: 0.5; }
+  50% { transform: scale(1.2); opacity: 1; }
+  100% { transform: scale(0.95); opacity: 0.5; }
+}
+
+/* Linear Gradient Typography Headers */
+.text-gradient-title {
+  background: linear-gradient(to bottom, #ffffff, #cbd5e1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
+.text-gradient-accent {
+  background: linear-gradient(to right, #818cf8, #c084fc, #f472b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom Text and Utility Sizing missing in Bootstrap */
+.text-muted-custom {
+  color: #94a3b8;
+}
+.text-light-custom {
+  color: #cbd5e1;
+  font-size: 0.9rem;
+}
+.max-w-2xl {
+  max-w: 42rem;
+}
+.border-dark-custom {
+  border-color: #334155 !important;
+}
+
+/* Colorful Icon Vectors */
+.icon-indigo { stroke: #818cf8; }
+.icon-purple { stroke: #c084fc; }
+.icon-pink { stroke: #f472b6; }
+
+/* Custom Main Button Styling */
+.btn-gradient {
+  background: linear-gradient(to right, #6366f1, #a855f7);
+  color: white !important;
+  border: none;
+  font-size: 0.875rem;
+  box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.3) !important;
+}
+.btn-gradient:hover {
+  background: linear-gradient(to right, #4f46e5, #9333ea);
+}
+
+/* Secondary Link Hover Shifts */
+.cta-link {
+  font-size: 0.875rem;
+  transition: color 0.2s ease;
+}
+.cta-link:hover {
+  color: #818cf8 !important;
+}
+.arrow-transition {
+  display: inline-block;
+  transition: transform 0.2s ease;
+}
+.cta-link:hover .arrow-transition {
+  transform: translateX(4px);
+}
+
+
+/* Cards Section Layout Base */
+.pricing-cards-section {
+  background-color: #0f172a;
+  z-index: 2;
+}
+
+/* Background Color utilities missing in classic bootstrap */
+.bg-slate-900 {
+  background-color: #1e293b !important;
+}
+
+/* General Layout Card Customization */
+.package-card {
+  border-radius: 1.25rem !important;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease !important;
+}
+.package-card.border-dark-custom {
+  border: 1px solid #334155;
+}
+.package-card.border-purple-custom {
+  border: 1px solid rgba(168, 85, 247, 0.4);
+  box-shadow: 0 4px 30px rgba(168, 85, 247, 0.05);
+}
+
+/* Featured / Highlighted growth card look */
+.package-card.featured {
+  background: linear-gradient(#1e293b, #1e293b) padding-box,
+              linear-gradient(135deg, #a855f7, #6366f1) border-box !important;
+  border: 1px solid transparent !important;
+}
+.popular-tag {
+  background: linear-gradient(to right, #a855f7, #6366f1);
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  margin-right: 1.5rem;
+  box-shadow: 0 4px 12px rgba(168, 85, 247, 0.3);
+}
+
+/* Text Sub-tier colors */
+.text-indigo-light { color: #a5b4fc; }
+.text-purple-light { color: #d8b4fe; }
+
+/* Custom Bootstrap over-ride variant badges */
+.text-bg-indigo {
+  background-color: rgba(99, 102, 241, 0.15) !important;
+  color: #818cf8 !important;
+}
+.text-bg-purple {
+  background-color: rgba(168, 85, 247, 0.15) !important;
+  color: #c084fc !important;
+}
+
+/* Card Button Adjustments */
+.btn-outline-custom {
+  border: 1px solid #475569;
+  color: #cbd5e1;
+  background-color: transparent;
+  font-size: 0.875rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+}
+.btn-outline-custom:hover {
+  background-color: #334155;
+  color: #ffffff;
+  border-color: #64748b;
+}
+
+/* Vector Checks */
+.icon-indigo-check { stroke: #818cf8; }
+.icon-purple-check { stroke: #c084fc; }
+
+
+/* Deep Slate Layout Base */
+.pricing-custom-roi {
+  background-color: #0f172a;
+}
+
+/* Custom Bootstrap Variant for Pink theme */
+.text-bg-pink {
+  background-color: rgba(244, 114, 182, 0.15) !important;
+  color: #f472b6 !important;
+}
+
+/* Feature Grid Icon Blocks */
+.factor-icon-box {
+  width: 40px;
+  height: 40px;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+}
+
+/* Interactive Calculator Styling wrapper */
+.calculator-card {
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.5);
+}
+
+/* Custom Dark range sliders */
+.custom-slider::-webkit-slider-runnable-track {
+  background: #334155;
+  height: 6px;
+  border-radius: 3px;
+}
+.custom-slider::-webkit-slider-thumb {
+  background: #6366f1;
+  border: 2px solid #ffffff;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  margin-top: -6px;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+.custom-slider:active::-webkit-slider-thumb {
+  transform: scale(1.2);
+}
+
+/* Second Slider Color Variant */
+.custom-slider.color-purple::-webkit-slider-thumb {
+  background: #a855f7;
+}
+
+/* Metric Display Output Boxes */
+.calc-result-box {
+  background-color: #0f172a;
+  border: 1px solid #334155;
+}
+.bg-slate-950 {
+  background-color: #0f172a !important;
+  border: 1px solid #1e293b;
+}
+
+
+/* BACKGROUND DIFFERENCE (bg diff) SECTION CONTAINER */
+.pricing-inclusions-section {
+  /* Shifts from slate-950/ slate-900 into an ashier dark-charcoal block */
+  background-color: #111827; 
+}
+
+/* Individual Inclusion grid boxes */
+.inclusion-feature-card {
+  background-color: #1f2937;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+/* Dynamic tiny round icon bullets */
+.inclusion-check-wrapper {
+  background-color: rgba(99, 102, 241, 0.15);
+  color: #818cf8;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Recommendation engine box */
+.framework-matrix-card {
+  background-color: #111827;
+}
+
+/* Horizontal matrix line listings */
+.framework-tier-row {
+  background-color: #1f2937;
+  border: 1px solid #374151;
+}
+
+/* Highlighting the popular selection inside the grid */
+.framework-tier-row.active-purple {
+  border: 1px solid rgba(168, 85, 247, 0.4);
+  background-color: rgba(226, 213, 239, 0.04);
+}
+.framework-tier-row.border-dashed {
+  border-style: dashed !important;
+  background-color: transparent;
+}
+
+/* Quote formatting text rules */
+.philosophy-quote-box {
+  background-color: rgba(167, 203, 253, 0.5);
+}
+.border-indigo {
+  border-color: #6366f1 !important;
+}
+
+/* Micro-typography adjustments */
+.xs-text {
+  font-size: 0.75rem;
+}
+.lead-custom {
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+

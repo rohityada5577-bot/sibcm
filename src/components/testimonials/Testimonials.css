@@ -1,0 +1,328 @@
+/* Base Layout Setup */
+.kinetic-hero {
+  background-color: #05050a;
+  min-height: 85vh;
+  z-index: 1;
+}
+
+/* Structural Tech Background elements */
+.kinetic-mesh-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background-image: radial-gradient(#111118 1px, transparent 1px);
+  background-size: 24px 24px;
+  opacity: 0.8;
+}
+.kinetic-glow-sphere {
+  position: absolute;
+  top: 20%;
+  left: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.06) 0%, transparent 70%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+/* Right Text Component Layouts */
+.kinetic-badge {
+  background-color: #111122;
+  border: 1px solid #222244;
+  color: #a78bfa;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+.live-pulse-ring {
+  width: 6px;
+  height: 6px;
+  background-color: #10b981;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(16, 185, 129, 0.2);
+}
+.kinetic-text-stroke {
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.4);
+}
+.text-muted-kinetic { color: #6b7280; }
+.text-kinetic-purple { color: #a78bfa; }
+.lead-kinetic { font-size: 1.1rem; line-height: 1.6; }
+.border-kinetic-dark { border-color: #1e1e2f !important; }
+
+.vertical-divider-line {
+  width: 1px;
+  height: 50px;
+  background-color: #1e1e2f;
+}
+
+/* Left Card Sliding Panel Track */
+.slider-height-constrain {
+  min-height: 380px; /* Prevents text layout shifting on switch */
+  display: flex;
+  align-items: stretch;
+}
+.kinetic-testimonial-wrapper {
+  background-color: #0b0b14;
+  border: 1px solid #16162a;
+  width: 100%;
+  box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.8);
+}
+
+/* Decorative Card Items */
+.kinetic-giant-quote {
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  font-size: 12rem;
+  font-family: serif;
+  color: #131326;
+  line-height: 0;
+  z-index: 1;
+  user-select: none;
+}
+.kinetic-quote-body {
+
+  font-size: 1.15rem;
+  line-height: 1.75;
+  letter-spacing: -0.01em;
+}
+.border-kinetic-light { border-color: #16162a !important; }
+.testimonial-metric-badge {
+  background-color: rgba(99, 102, 241, 0.15) !important;
+  color: #818cf8 !important;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* Profile Square Metadata */
+.kinetic-avatar {
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  font-size: 0.95rem;
+}
+.xs-kinetic { font-size: 0.75rem; }
+
+/* Control Buttons Styling */
+.carousel-control-btn {
+  width: 42px;
+  height: 42px;
+  background-color: #0b0b14;
+  border: 1px solid #16162a;
+  color: #ffffff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.carousel-control-btn:hover {
+  background-color: #16162a;
+  border-color: #a78bfa;
+  color: #a78bfa;
+}
+
+
+/* Core Layout Container (White Background Difference) */
+.success-stories-section {
+  background-color: #ffffff !important;
+  color: #0f172a;
+}
+
+/* Base Utility Colors missing in classic Dark CSS setups */
+.text-slate-900 {
+  color: #0f172a !important;
+}
+.text-muted-stats {
+  color: #475569;
+}
+.lead-stats {
+  font-size: 1.125rem;
+  line-height: 1.7;
+}
+.max-w-2xl {
+  max-w: 42rem;
+}
+
+/* Premium Top Header Section Badge */
+.stats-section-badge {
+  background-color: #f1f5f9 !important;
+  color: #4f46e5 !important; /* Elegant Indigo Text */
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border: 1px solid #e2e8f0;
+}
+
+/* Individual Metric Grid Cards */
+.stat-card {
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 10px 15px -3px rgba(0, 0, 0, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.stat-card.border-light-grey {
+  border: 1px solid #e2e8f0 !important;
+}
+.stat-card:hover {
+  border-color: #cbd5e1 !important;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.02);
+}
+
+/* High Contrast Big Typography Values */
+.stat-number {
+  font-size: 3.5rem;
+  line-height: 1;
+  background: linear-gradient(135deg, #4f46e5, #7c3aed); /* Purple Indigo Gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Bottom Context Box */
+.stats-footer-note {
+  background-color: #f8fafc;
+}
+.stats-footer-note.border-light-grey {
+  border: 1px solid #e2e8f0 !important;
+}
+
+
+/* Core Section Setup */
+.narrative-trust-section {
+  background-color: #08080d !important; /* Pitch Dark */
+}
+
+/* Base structural row configuration */
+.narrative-row {
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+.narrative-row:hover {
+  background-color: #0d0d16;
+}
+.narrative-row.active-row {
+  background-color: #0e0e1a;
+}
+
+/* Simple top pill tag */
+.narrative-label-pill {
+  background-color: rgba(99, 102, 241, 0.1);
+  color: #818cf8;
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  padding: 0.35rem 0.85rem;
+  border-radius: 50rem;
+  font-size: 0.775rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+/* Borders missing in dynamic classic variables */
+.border-dark-custom {
+  border-color: #1e1e30 !important;
+}
+
+/* Text color transformations */
+.text-muted-narrative {
+  color: #4b5563;
+}
+.text-indigo-active {
+  color: #818cf8;
+  font-weight: 600;
+}
+.text-light-custom {
+  color: #cbd5e1;
+}
+
+/* Core narrative paragraphs text scaling */
+.narrative-body-paragraph {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  max-w: 48rem;
+}
+
+/* Micro-utilities transitions */
+.transition-opacity {
+  transition: opacity 0.2s ease;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+
+
+
+/* Core Section Layout Base (Pure High-Contrast White) */
+.accountability-section {
+  background-color: #ffffff !important;
+  color: #0f172a;
+}
+
+/* Subtle clean header separating element */
+.top-accent-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #f1f5f9;
+}
+
+/* Base Utility Colors matching crisp light layouts */
+.text-slate-900 {
+  color: #0f172a !important;
+}
+.text-muted-editorial {
+  color: #475569;
+}
+.lead-editorial {
+  font-size: 1.075rem;
+  line-height: 1.7;
+}
+.line-height-relaxed {
+  line-height: 1.65;
+}
+.x-small {
+  font-size: 0.725rem;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.border-light-grey {
+  border-color: #e2e8f0 !important;
+}
+
+/* Color Accent Bars */
+.border-indigo-accent {
+  border-color: #4f46e5 !important;
+}
+.border-purple-accent {
+  border-color: #7c3aed !important;
+}
+
+/* Premium Navigation Badges */
+.white-section-badge {
+  background-color: #f8fafc !important;
+  color: #4f46e5 !important;
+  font-size: 0.775rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border: 1px solid #e2e8f0;
+}
+.purple-section-badge {
+  background-color: #f5f3ff !important;
+  color: #7c3aed !important;
+  font-size: 0.775rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border: 1px solid #ddd6fe;
+}
+
+/* Right Side Block Panel Layout */
+.reputation-editorial-card {
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+
+/* Dynamic Bottom Quote/Highlight Callout */
+.retention-highlight-box {
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -1px rgba(0, 0, 0, 0.01);
+}
+
