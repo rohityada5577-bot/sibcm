@@ -5,7 +5,7 @@ import { attendeeContent } from "./data";
 export default function AttendeeSection() {
   return (
     <section 
-      className="bg-white text-dark py-5 position-relative overflow-hidden" 
+      className="bg-white text-dark  position-relative overflow-hidden" 
       style={{ 
         fontFamily: "'Plus Jakarta Sans', system-ui, sans-serif",
         backgroundColor: "#f8fafc" 
@@ -86,10 +86,17 @@ export default function AttendeeSection() {
             <span className="badge brand-badge-pill rounded-pill px-3 py-2 mb-3 fw-bold text-uppercase">
               {attendeeContent.badge}
             </span>
-            <h2 className="display-4 fw-extrabold text-dark mb-4 tracking-tight lh-sm">
+            {/* <h2 className="display-4 fw-extrabold text-dark mb-4 tracking-tight lh-sm">
               {attendeeContent.headingMain} <br />
               <span className="text-gradient-header">{attendeeContent.headingGradient}</span>
-            </h2>
+            </h2> */}
+             <h3 className="whitebg-h2">
+              {attendeeContent.headingMain}
+              <br />
+              <span className="gradient-heading">
+                {attendeeContent.headingGradient}
+              </span>
+      </h3>
             <p className="text-secondary fs-5 mb-0 lh-base border-start border-2 border-primary border-opacity-20 ps-4">
               {attendeeContent.description}
             </p>

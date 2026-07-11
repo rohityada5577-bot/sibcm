@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { seoHeroData } from "./dada";
+import { seoHeroData } from "./data";
 import "./cso.css";
 
 export default function SeoHeroSection() {

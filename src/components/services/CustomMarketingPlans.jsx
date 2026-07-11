@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { customMarketingData } from "./dada";
+import { customMarketingData } from "./data";
 import "./Service.css";
 
 export default function CustomMarketingPlans() {

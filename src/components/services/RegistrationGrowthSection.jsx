@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { registrationGrowthData } from "./dada";
+import { registrationGrowthData } from "./data";
 import "./Service.css";
 
 export default function RegistrationGrowthSection() {

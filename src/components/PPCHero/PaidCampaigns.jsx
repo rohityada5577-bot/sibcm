@@ -1,114 +1,102 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { paidCampaignsData } from "./data";
 import "./PPCHero.css";
 
+export default function PaidCampaigns() {
+  return (
+    <section className="ppc-featured-section">
 
-const campaignFeatures = [
-  {
-    title: "Precise Audience Targeting",
-    description:
-      "Target professionals by job title, company size, industry, seniority, and skills on LinkedIn. Use Google intent signals and audience layering to reach users interested in your conference topic.",
-    icon: "🎯"
-  },
-  {
-    title: "Conversion-Optimized Ad Creative",
-    description:
-      "Create high-performing ad creatives highlighting speakers, sessions, networking opportunities, and strong value propositions. Continuously A/B test campaigns to reduce registration costs.",
-    icon: "⚡"
-  },
-  {
-    title: "Landing Page Alignment",
-    description:
-      "Ensure your landing pages match your ad messaging, maintain user intent, and remove friction from the registration journey.",
-    icon: "🚀"
-  }
-];
+      <div className="container">
 
+        <div className="ppc-featured-header text-center">
 
-export default function PaidCampaigns(){
+          <span className="ppc-featured-badge">
+            {paidCampaignsData.badge}
+          </span>
 
-return(
+          <h2>
+            {paidCampaignsData.title}
+          </h2>
 
-<section className="paid-section">
+          <p>
+            {paidCampaignsData.description}
+          </p>
 
+        </div>
 
-<div className="paid-glow paid-glow-one"></div>
-<div className="paid-glow paid-glow-two"></div>
+        <div className="row g-4">
 
+          {/* Featured Card */}
 
+          <div className="col-lg-12">
 
-<div className="paid-container">
+            <motion.div
+              className="ppc-main-card"
+              initial={{ opacity: 0, y: 60 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+            >
+              <div className="row align-items-center">
 
+                <div className="col-lg-4">
 
-<div className="paid-heading">
+                  <div className="ppc-main-number">
+                    {paidCampaignsData.featured.number}
+                  </div>
 
+                </div>
 
-<span>
-CONFERENCE PPC STRATEGY
-</span>
+                <div className="col-lg-8">
 
+                  <h3>
+                    {paidCampaignsData.featured.title}
+                  </h3>
 
-<h2>
-Paid Campaigns That
-<br/>
-Bring Real Attendees
-</h2>
+                  <p>
+                    {paidCampaignsData.featured.description}
+                  </p>
 
+                </div>
 
-<p>
-Not all ad clicks are equal. Our conference PPC campaigns focus on
-qualified professionals who are genuinely interested in attending —
-not meaningless traffic.
-</p>
+              </div>
 
+            </motion.div>
 
-</div>
+          </div>
 
+          {/* Small Cards */}
 
+          {paidCampaignsData.secondary.map((item, index) => (
+            <div className="col-lg-6" key={index}>
 
+              <motion.div
+                className="ppc-small-card"
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                  delay: index * 0.2
+                }}
+              >
+                <div className="ppc-small-number">
+                  {item.number}
+                </div>
 
-<div className="paid-grid">
+                <h3>{item.title}</h3>
 
+                <p>{item.description}</p>
 
-{
-campaignFeatures.map((item,index)=>(
+              </motion.div>
 
-<div className="paid-card" key={index}>
+            </div>
+          ))}
 
+        </div>
 
-<div className="paid-icon">
-{item.icon}
-</div>
+      </div>
 
-
-<h3>
-{item.title}
-</h3>
-
-
-<p>
-{item.description}
-</p>
-
-
-<div className="card-line"></div>
-
-
-</div>
-
-))
-}
-
-
-
-</div>
-
-
-
-</div>
-
-
-
-</section>
-
-)
-
+    </section>
+  );
 }

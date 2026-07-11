@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { promotionHeroData } from "./data";
 import "./promotion.css";
 
-export default function PromotionHero() {
+export default function PromotionHero({data = promotionHeroData}) {
   return (
     <section className="promotion-hero">
 
@@ -25,16 +25,16 @@ export default function PromotionHero() {
               transition={{ duration: 0.8 }}
             >
               <span className="hero-badge">
-                {promotionHeroData.badge}
+                {data.badge}
               </span>
 
               <h1 className="hero-title">
-                Promote Your Conference
+               {data.title}
                 <span> & Get More Attendees</span>
               </h1>
 
               <p className="hero-description">
-                {promotionHeroData.description}
+                {data.description}
               </p>
 
               <div className="hero-buttons">
@@ -68,12 +68,12 @@ export default function PromotionHero() {
               </h3>
 
               <p>
-                {promotionHeroData.cardText}
+                {data.cardText}
               </p>
 
               <div className="hero-stats">
 
-                {promotionHeroData.stats.map((item, index) => (
+                {data.stats.map((item, index) => (
                   <div key={index} className="stat-item">
                     <h4>{item.number}</h4>
                     <span>{item.label}</span>

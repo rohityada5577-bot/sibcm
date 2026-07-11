@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { seoPoints } from "./dada";
+import { seoPoints } from "./data";
 import "./cso.css";
 
 export default function SEOImportance() {
@@ -19,10 +19,10 @@ export default function SEOImportance() {
             For Conferences
           </h2>
 
-          <p>
+          {/* <p>
             A powerful SEO strategy ensures your conference reaches the right
             audience and generates registrations organically.
-          </p>
+          </p> */}
 
         </div>
 

@@ -110,7 +110,7 @@
 
 .ranking-card{
   background:var(--seo-card);
-  padding:30px;
+  padding:40px;
   border-radius:20px;
   text-align:center;
 }
@@ -197,7 +197,7 @@
 
 
 .seo-benefits-section {
-  padding: 120px 0;
+  padding:40px;
   background: #ffffff;
   position: relative;
   overflow: hidden;
@@ -587,7 +587,7 @@
 }
 
 .ranking-section {
-  padding: 120px 0;
+  padding:40px;
   background: #ffffff;
   position: relative;
 }
@@ -730,7 +730,7 @@
 .landing-seo-section{
   position: relative;
   overflow: hidden;
-  padding: 120px 0;
+  padding:40px;
   background:
     radial-gradient(circle at top left,
       rgba(12,143,120,.18),
@@ -871,7 +871,7 @@
 
 .organic-growth-section {
   position: relative;
-  padding: 120px 0;
+  padding:40px;
   background: #ffffff;
   overflow: hidden;
 }

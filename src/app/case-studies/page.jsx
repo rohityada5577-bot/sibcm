@@ -1,5 +1,5 @@
-import SuccessStoriesHero from "@/components/casestudy/SuccessStoriesHero";
-import ConferenceFramework from "@/components/casestudy/ConferenceFramework";
+import ConferenceCaseStudyHero from "@/components/casestudy/ConferenceCaseStudyHero";
+import GrowthResultsSection from "@/components/casestudy/GrowthResultsSection";
 import HowWeIncreasedAttendance from "@/components/casestudy/HowWeIncreasedAttendance";
 import HealthcareCaseStudy from "@/components/casestudy/HealthcareCaseStudy";
 import RoiMatrixSection from "@/components/casestudy/RoiMatrixSection";
@@ -16,8 +16,8 @@ export default function Page() {
   return (
     <>
      
-          <SuccessStoriesHero />
-            <ConferenceFramework />
+          <ConferenceCaseStudyHero />
+            <GrowthResultsSection />
             <HowWeIncreasedAttendance />
             <HealthcareCaseStudy />
               <RoiMatrixSection />

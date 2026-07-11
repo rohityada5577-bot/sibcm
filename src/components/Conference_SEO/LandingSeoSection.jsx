@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { landingSeoData } from "./dada";
+import { landingSeoData } from "./data";
 import "./cso.css";
 
 export default function LandingSeoSection() {

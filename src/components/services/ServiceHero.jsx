@@ -1,7 +1,7 @@
 "use client";
 
 import "./Service.css";
-import { conferenceServicesHero } from "./dada";
+import { conferenceServicesHero } from "./data";
 
 export default function HeroSection() {
   return (

@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import "./cso.css";
+import { organicGrowthData } from "./data";
 
 export default function OrganicGrowthSection() {
   return (
@@ -23,12 +24,11 @@ export default function OrganicGrowthSection() {
               transition={{ duration: 0.6 }}
             >
               <span className="growth-badge">
-                Sustainable SEO Growth
+                {organicGrowthData.badge}
               </span>
 
               <h2 className="growth-title">
-                Long-Term Growth
-                <span> Through Organic Traffic</span>
+                {organicGrowthData.title}
               </h2>
             </motion.div>
 
@@ -43,26 +43,16 @@ export default function OrganicGrowthSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.7 }}
             >
+                <div className="growth-highlight">
+                <span>SEO Advantage</span>
 
-              <p>
-                The most cost-effective conference marketing strategy over time is a consistent investment in SEO.
-              </p>
-
-              <p>
-                Paid ads deliver immediate results but stop the moment your budget runs out. SEO builds a cumulative organic presence — each piece of content, each optimized page, and each earned backlink compounds in value over time.
-              </p>
-
-              <div className="growth-highlight">
-                <span>Organic Asset</span>
-
-                A blog post ranking on Page 1 for
-                <strong> "industry conference tips"</strong>
-                can generate registration traffic not only for this year's event, but for future events as well.
+                {organicGrowthData.footer}
               </div>
+              {/* <p>{organicGrowthData.description}</p> */}
 
-              <p>
-                Our conference clients who invest consistently in SEO year-over-year see their cost-per-registration decrease annually as organic traffic grows — while their paid advertising campaigns become more effective because their brand already has organic authority.
-              </p>
+              <p>{organicGrowthData.intro}</p>
+
+            
 
             </motion.div>
 
@@ -70,8 +60,36 @@ export default function OrganicGrowthSection() {
 
         </div>
 
-      </div>
+        {/* Growth Points */}
 
+        <div className="row mt-5 g-4">
+
+          {organicGrowthData.points.map((item, index) => (
+            <div className="col-lg-3 col-md-6" key={index}>
+              <motion.div
+                className="growth-point-card"
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                  duration: 0.5,
+                  delay: index * 0.1,
+                }}
+              >
+                <div className="growth-point-number">
+                  {item.year}
+                </div>
+
+                <h3>{item.title}</h3>
+
+                <p>{item.description}</p>
+              </motion.div>
+            </div>
+          ))}
+
+        </div>
+
+      </div>
     </section>
   );
 }

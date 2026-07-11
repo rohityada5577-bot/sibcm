@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { resultsData } from "./dada";
+import { resultsData } from "./data";
 import "./Service.css";
 
 export default function ResultsSection() {

@@ -26,7 +26,7 @@ export default function StrategySection() {
           <h2 className="strategy-title">
             {strategyContent.headingMain}
             <br />
-            <span className="strategy-gradient-text">
+            <span className="gradient-heading">
               {strategyContent.headingGradient}
             </span>
           </h2>

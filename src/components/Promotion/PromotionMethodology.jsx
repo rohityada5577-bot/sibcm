@@ -4,73 +4,52 @@ import { motion } from "framer-motion";
 import { promotionMethodologyData } from "./data";
 import "./promotion.css";
 
-export default function PromotionMethodology() {
+export default function PromotionMethodology({
+  data = promotionMethodologyData,
+}) {
   return (
-    <section className="methodology-section">
-
+    <section className="editorial-section">
       <div className="container">
 
-        <div className="row align-items-start gy-5">
+        <div className="editorial-header">
+          <span className="editorial-badge">
+            {data.badge}
+          </span>
 
-          <div className="col-lg-5">
+          <h2 className="editorial-title">
+            {data.title}
+          </h2>
 
+          <p className="editorial-description">
+            {data.description}
+          </p>
+        </div>
+
+        <div className="editorial-layout">
+
+          {data.points.map((item, index) => (
             <motion.div
-              className="methodology-content"
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              key={index}
+              className="editorial-row"
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ delay: index * 0.1 }}
               viewport={{ once: true }}
             >
-              <span className="methodology-badge">
-                {promotionMethodologyData.badge}
-              </span>
+              <div className="editorial-number">
+                {(index + 1).toString().padStart(2, "0")}
+              </div>
 
-              <h2 className="methodology-title">
-                {promotionMethodologyData.title}
-              </h2>
-
-              <p className="methodology-desc">
-                {promotionMethodologyData.description}
-              </p>
-
-              <p className="methodology-intro">
-                {promotionMethodologyData.intro}
-              </p>
+              <div className="editorial-content">
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+              </div>
             </motion.div>
-
-          </div>
-
-          <div className="col-lg-7">
-
-            <div className="methodology-timeline">
-
-              {promotionMethodologyData.points.map((item, index) => (
-                <motion.div
-                  key={index}
-                  className="timeline-item"
-                  initial={{ opacity: 0, x: 50 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: index * 0.1 }}
-                >
-                  <div className="timeline-number">
-                    0{index + 1}
-                  </div>
-
-                  <div className="timeline-content">
-                    <h3>{item.title}</h3>
-                    <p>{item.description}</p>
-                  </div>
-                </motion.div>
-              ))}
-
-            </div>
-
-          </div>
+          ))}
 
         </div>
 
       </div>
-
     </section>
   );
 }

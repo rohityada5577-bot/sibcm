@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { seoServicesData } from "./dada";
+import { seoServicesData } from "./data";
 import "./Service.css";
 
 export default function SeoMarketingSection() {

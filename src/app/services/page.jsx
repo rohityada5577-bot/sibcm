@@ -3,7 +3,8 @@ import PromotionServices from "@/components/services/PromotionServices";
 import StrategySection from "@/components/services/StrategySection";
 import RegistrationGrowthSection from "@/components/services/RegistrationGrowthSection";
 import SeoMarketingSection from "@/components/services/SeoMarketingSection";
-import MarketingChannelsSection from "@/components/services/MarketingChannelsSection";
+// import MarketingChannelsSection from "@/components/services/MarketingChannelsSection";
+import MarketingChannels from "@/components/services/MarketingChannels";
 import CustomMarketingPlans from "@/components/services/CustomMarketingPlans";
 import ResultsSection from "@/components/services/ResultsSection";
 
@@ -20,7 +21,8 @@ export default function Page() {
       <StrategySection />
        <RegistrationGrowthSection />
           <SeoMarketingSection />
-      <MarketingChannelsSection />
+      {/* <MarketingChannelsSection /> */}
+      <MarketingChannels />
       <CustomMarketingPlans />
        <ResultsSection />
 

@@ -1,10 +1,10 @@
 "use client";
 
 import "./about.css";
-import { missionExperienceContent } from "./dada";
+// import { missionExperienceContent } from "./data";
 
-export default function MissionExperience() {
-  const { mission, experience } = missionExperienceContent;
+export default function MissionExperience({data}) {
+  const { mission, experience } = data;
 
   return (
     <section className="mission-section">
@@ -72,6 +72,7 @@ export default function MissionExperience() {
                     <span>{item}</span>
                   </div>
                 ))}
+                <p>Across these verticals, we have navigated the unique challenges each industry brings, compliance constraints in healthcare marketing, the long sales cycles of executive-level finance events, the technical audience sophistication of developer conferences</p>
 
               </div>
 

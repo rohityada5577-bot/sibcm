@@ -5,32 +5,32 @@ const audienceData = [
   {
     title: "Job Title & Professional Role",
     description:
-      "Target exact professional profiles your conference serves by role, designation, and expertise.",
-    icon: "👤"
+      "Job title and professional role — targeting the exact professional profiles your conference serves",
+  
   },
   {
     title: "Industry & Company Type",
     description:
-      "Filter organizations and companies that regularly invest in professional conferences.",
-    icon: "🏢"
+      "Industry and company type — filtering for organizations that send employees to professional conferences",
+  
   },
   {
     title: "Behavioral Intent Signals",
     description:
-      "Reach people actively searching, reading, and engaging with content related to your topic.",
-    icon: "📊"
+      "Behavioral intent signals — people recently searching for or engaging with content related to your conference topic",
+   
   },
   {
     title: "Lookalike Audiences",
     description:
-      "Create high-quality audience groups using your existing registrant and attendee data.",
-    icon: "🔎"
+      "Lookalike audiences — built from your existing registrant and attendee data",
+    
   },
   {
     title: "Retargeting Audiences",
     description:
-      "Reconnect with website visitors, email subscribers, and previous event attendees.",
-    icon: "🎯"
+      "Retargeting audiences — website visitors, email list contacts, and past event attendees",
+   
   }
 ];
 
@@ -53,16 +53,14 @@ AUDIENCE TARGETING STRATEGY
 
 
 <h2>
-Targeting The Right
+Targeting the Right 
 <br/>
-Audience For Events
+Audience for Events
 </h2>
 
 
 <p>
-Audience targeting is the most important factor behind successful
-conference PPC campaigns. We build precise audience segments to
-reach professionals who are most likely to register.
+Audience targeting is the single most important variable in conference PPC performance. We build audience segments based on:
 </p>
 
 </div>

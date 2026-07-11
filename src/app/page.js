@@ -5,6 +5,8 @@ import AttendeeSection from "@/components/home/AttendeeSection";
 import StrategySection from "@/components/home/StrategySection";
 import ChannelsSection from "@/components/home/ChannelsSection";
 import WhyChoose from "@/components/home/WhyChoose";
+import IndustriesSection from "@/components/home/IndustriesSection";
+
 import FaqSection from "@/components/common/FaqSection";
 
 
@@ -19,6 +21,7 @@ export default function HomePage() {
       <StrategySection />
       <ChannelsSection />
       <WhyChoose />
+      <IndustriesSection />
       <FaqSection />
       {/* <Testimonials /> */}
 

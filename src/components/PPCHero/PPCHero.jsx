@@ -28,12 +28,7 @@ export default function PPCHero(){
           </h1>
 
 
-          <p>
-            When you need registrations now — not in 3 months — our
-            data-driven PPC campaigns on Google Ads and LinkedIn Ads
-            connect your conference with the right audience at the
-            exact moment they are ready to register.
-          </p>
+        
 
 
           <div className="ppc-buttons">
@@ -50,7 +45,7 @@ export default function PPCHero(){
           </div>
 
 
-
+{/* 
           <div className="ppc-stats">
 
 
@@ -84,7 +79,7 @@ export default function PPCHero(){
             </div>
 
 
-          </div>
+          </div> */}
 
 
         </div>
@@ -99,26 +94,26 @@ export default function PPCHero(){
 
             <div className="chart-top">
 
-              <span>
-                Campaign Performance
-              </span>
+          
 
-              <strong>
-                +184%
-              </strong>
+               <p>
+         When you need registrations now — not in 3 months — pay-per-click advertising is your fastest and most direct path to results. Our conference PPC campaigns on Google Ads and LinkedIn Ads are built to reach your ideal attendees at exactly the moment they are considering events like yours, and convert that attention into confirmed registrations.
+PPC generates $2 for every $1 spent on average, and when campaigns are built and managed specifically for conference registration conversion, that efficiency improves significantly. We run conference PPC campaigns every day — we know what works.
+
+          </p>
 
             </div>
 
 
 
-            <div className="chart-bars">
+            {/* <div className="chart-bars">
 
               <div style={{height:"45%"}}></div>
               <div style={{height:"65%"}}></div>
               <div style={{height:"85%"}}></div>
               <div style={{height:"95%"}}></div>
 
-            </div>
+            </div> */}
 
 
 

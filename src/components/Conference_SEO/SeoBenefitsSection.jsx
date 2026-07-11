@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { seoBenefitsData } from "./dada";
+import { seoBenefitsData } from "./data";
 import "./cso.css";
 
 export default function SeoBenefitsSection() {

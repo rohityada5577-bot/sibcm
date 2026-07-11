@@ -579,7 +579,7 @@
 
 .strategy-section {
   position: relative;
-  padding: 120px 0;
+  padding:40px;
   overflow: hidden;
 
   background:
@@ -916,7 +916,7 @@
 
 .seo-section {
   position: relative;
-  padding: 120px 0;
+  padding:40px;
   overflow: hidden;
 
   background:
@@ -1243,7 +1243,7 @@
   }
 
   .marketing-card{
-    padding:30px;
+    padding:40px;
   }
 
 }
@@ -1684,7 +1684,7 @@ RESPONSIVE
 ========================== */
 
 .results-section {
-  padding: 120px 0;
+  padding:40px;
   background: #ffffff;
   position: relative;
   overflow: hidden;
@@ -1825,5 +1825,123 @@ RESPONSIVE
 
   .results-number {
     font-size: 36px;
+  }
+}
+
+.marketing-channels {
+  padding: 120px 0;
+  background: #030712;
+  position: relative;
+  overflow: hidden;
+}
+
+.marketing-channels::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: rgba(99,102,241,.12);
+  border-radius: 50%;
+  filter: blur(120px);
+  top: -150px;
+  left: -150px;
+}
+
+.section-header {
+  max-width: 850px;
+  margin: auto;
+  margin-bottom: 80px;
+}
+
+.section-badge {
+  background: rgba(99,102,241,.15);
+  color: #818cf8;
+  padding: 10px 20px;
+  border-radius: 50px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.section-header h2 {
+  color: white;
+  font-size: clamp(2.2rem,5vw,4rem);
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.section-header p {
+  color: rgba(255,255,255,.7);
+  font-size: 18px;
+}
+
+.channel-card {
+  background: rgba(255,255,255,.03);
+  border: 1px solid rgba(255,255,255,.08);
+  backdrop-filter: blur(20px);
+  border-radius: 30px;
+  padding: 40px;
+  margin-bottom: 30px;
+  transition: .4s;
+}
+
+.channel-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(99,102,241,.4);
+}
+
+.channel-number {
+  font-size: 80px;
+  font-weight: 900;
+  background: linear-gradient(
+    135deg,
+    #6366f1,
+    #06b6d4
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.channel-content h3 {
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.channel-content span {
+  color: #06b6d4;
+  font-weight: 600;
+}
+
+.feature-item {
+  padding: 16px;
+  border-radius: 14px;
+  background: rgba(255,255,255,.04);
+  color: rgba(255,255,255,.8);
+  height: 100%;
+  transition: .3s;
+}
+
+.feature-item:hover {
+  background: rgba(99,102,241,.15);
+  transform: translateX(5px);
+}
+
+@media(max-width:991px) {
+  .marketing-channels {
+    padding: 80px 0;
+  }
+
+  .channel-card {
+    padding: 25px;
+  }
+
+  .channel-number {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+
+  .channel-content h3 {
+    font-size: 26px;
   }
 }

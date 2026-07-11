@@ -22,7 +22,7 @@ export default function ChannelsSection() {
                 {channelsContent.badge}
               </span>
 
-              <h2 className="channels-title">
+              <h2 className="whitebg-h2">
                 {channelsContent.headingMain}
                 <br />
                 <span className="channels-gradient">

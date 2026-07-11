@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { promotionServicesData } from "./dada";
+import { promotionServicesData } from "./data";
 import "./Service.css"
 
 export default function PromotionServicesSection() {

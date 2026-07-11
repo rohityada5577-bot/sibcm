@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { rankingConferenceData } from "./dada";
+import { rankingConferenceData } from "./data";
 import "./cso.css";
 
 export default function RankingConference() {

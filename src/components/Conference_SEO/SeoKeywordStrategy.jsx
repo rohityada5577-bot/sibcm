@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { keywordStrategyData } from "./dada";
+import { keywordStrategyData } from "./data";
 import "./cso.css";
 
 export default function SeoKeywordStrategy() {

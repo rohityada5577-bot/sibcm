@@ -1,7 +1,7 @@
 "use client";
 
 import "./about.css";
-import { trustSectionContent } from "./dada";
+import { trustSectionContent } from "./data";
 
 export default function TrustSection() {
   return (

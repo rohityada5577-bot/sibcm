@@ -1,9 +1,11 @@
 "use client";
 
 import "./about.css";
-import { whoWeAreContent } from "./dada";
+import { whoWeAreContent } from "./data";
 
-export default function WhoWeAreBento() {
+export default function WhoWeAreBento({
+  data = whoWeAreContent,
+}) {
   return (
     <section className="who-section">
 
@@ -16,18 +18,18 @@ export default function WhoWeAreBento() {
 
           <div className="col-lg-6">
             <span className="who-badge">
-              {whoWeAreContent.badge}
+              {data.badge}
             </span>
 
             <h2 className="who-title">
-              {whoWeAreContent.title}
-              <span> {whoWeAreContent.titleHighlight}</span>
+              {data.title}
+              <span> {data.titleHighlight}</span>
             </h2>
           </div>
 
           <div className="col-lg-6">
             <p className="who-description">
-              {whoWeAreContent.description}
+              {data.description}
             </p>
           </div>
 
@@ -36,54 +38,68 @@ export default function WhoWeAreBento() {
         <div className="row g-4">
 
           {/* Left Card */}
-          <div className="col-lg-5">
+          <div
+            className={
+              data.rightCard
+                ? "col-lg-5"
+                : "col-lg-12"
+            }
+          >
             <div className="who-card danger-card">
 
               <span className="card-tag danger">
-                {whoWeAreContent.leftCard.tag}
+                {data.leftCard.tag}
               </span>
 
               <h3>
-                {whoWeAreContent.leftCard.title}
+                {data.leftCard.title}
               </h3>
 
               <p>
-                {whoWeAreContent.leftCard.description}
+                {data.leftCard.description}
               </p>
 
-              <div className="excluded-list">
-                {whoWeAreContent.leftCard.exclusions.map((item, index) => (
-                  <span key={index}>
-                    ✕ {item}
-                  </span>
-                ))}
-              </div>
+              {data.leftCard.exclusions && (
+                <div className="excluded-list">
+                  {data.leftCard.exclusions.map(
+                    (item, index) => (
+                      <span key={index}>
+                        ✕ {item}
+                      </span>
+                    )
+                  )}
+                </div>
+              )}
 
             </div>
           </div>
 
           {/* Right Card */}
-          <div className="col-lg-7">
-            <div className="who-card success-card">
+          {data.rightCard && (
+            <div className="col-lg-7">
+              <div className="who-card success-card">
 
-              <span className="card-tag success">
-                {whoWeAreContent.rightCard.tag}
-              </span>
+                <span className="card-tag success">
+                  {data.rightCard.tag}
+                </span>
 
-              <h3>
-                {whoWeAreContent.rightCard.title}
-              </h3>
+                <h3>
+                  {data.rightCard.title}
+                </h3>
 
-              <p className="focus-text">
-                {whoWeAreContent.rightCard.description}
-              </p>
+                <p className="focus-text">
+                  {data.rightCard.description}
+                </p>
 
-              <div className="highlight-box">
-                {whoWeAreContent.rightCard.highlight}
+                {data.rightCard.highlight && (
+                  <div className="highlight-box">
+                    {data.rightCard.highlight}
+                  </div>
+                )}
+
               </div>
-
             </div>
-          </div>
+          )}
 
         </div>
 

@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { marketingChannelsData } from "./dada";
+import { marketingChannelsData } from "./data";
 import "./Service.css";
 
 export default function MarketingChannelsSection() {

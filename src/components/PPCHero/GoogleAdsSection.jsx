@@ -1,166 +1,65 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { seoImportanceData } from "./data";
 import "./PPCHero.css";
 
-const googleAdsFeatures = [
-  {
-    title: "Search Campaigns",
-    description:
-      "Target high-intent event keywords and reach professionals actively searching for conferences.",
-    icon: "🔍"
-  },
-  {
-    title: "Display Remarketing",
-    description:
-      "Re-engage website visitors who showed interest but haven't completed registration.",
-    icon: "🎯"
-  },
-  {
-    title: "YouTube Pre-Roll Ads",
-    description:
-      "Promote event teasers, speaker highlights, and sessions through engaging video ads.",
-    icon: "▶"
-  },
-  {
-    title: "Competitor Conquesting",
-    description:
-      "Capture audiences searching for competing conferences and industry events.",
-    icon: "🚀"
-  }
-];
-
-
-export default function GoogleAdsSection(){
-
-return(
-
-<section className="google-section">
-
-
-<div className="google-container">
-
-
-<div className="google-heading">
-
-<span>
-GOOGLE ADS FOR CONFERENCES
-</span>
-
-
-<h2>
-How Google Ads Help
-<br/>
-Conferences Grow
-</h2>
-
-
-<p>
-Google Search Ads place your conference in front of professionals
-actively searching for events in your industry. Reach your ideal
-attendees at the exact moment they are ready to engage.
-</p>
-
-
-</div>
-
-
-
-<div className="google-content">
-
-
-<div className="google-left">
-
-
-<div className="search-box">
-
-<div className="search-top">
-Google Search
-</div>
-
-
-<div className="search-result">
-
-<span>
-Sponsored
-</span>
-
-<h3>
-Fintech Summit Tickets 2026
-</h3>
-
-<p>
-Register for the world's leading fintech conference.
-</p>
-
-</div>
-
-</div>
-
-
-
-<div className="highlight-box">
-
-<h3>
-The Most Valuable Position In Digital Marketing
-</h3>
-
-<p>
-Your event appears at the top of search results when users
-are actively looking for exactly what you offer.
-</p>
-
-</div>
-
-
-</div>
-
-
-
-
-
-<div className="google-right">
-
-
-{
-googleAdsFeatures.map((item,index)=>(
-
-<div className="google-card" key={index}>
-
-<div className="google-icon">
-{item.icon}
-</div>
-
-
-<div>
-
-<h3>
-{item.title}
-</h3>
-
-<p>
-{item.description}
-</p>
-
-</div>
-
-
-</div>
-
-))
-}
-
-
-</div>
-
-
-
-</div>
-
-
-
-</div>
-
-
-</section>
-
-)
-
+export default function SEOImportance() {
+  return (
+    <section className="seo-story-section">
+      <div className="container">
+
+        <div className="row">
+
+          <div className="col-lg-5">
+            <div className="seo-story-left">
+
+              <span className="seo-story-badge">
+                {seoImportanceData.badge}
+              </span>
+
+              <h2 className="seo-story-title">
+                {seoImportanceData.heading}
+              </h2>
+
+              <p className="seo-story-description">
+                {seoImportanceData.description}
+              </p>
+
+            </div>
+          </div>
+
+          <div className="col-lg-7">
+
+            {seoImportanceData.points.map((item, index) => (
+              <motion.div
+                key={index}
+                className="seo-story-item"
+                initial={{ opacity: 0, x: 50 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                  duration: 0.5,
+                  delay: index * 0.1
+                }}
+              >
+                <div className="seo-story-number">
+                  {item.number}
+                </div>
+
+                <div className="seo-story-content">
+                  <h3>{item.title}</h3>
+                  <p>{item.description}</p>
+                </div>
+
+              </motion.div>
+            ))}
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  );
 }

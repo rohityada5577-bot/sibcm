@@ -1,0 +1,329 @@
+.case-study-hero {
+  position: relative;
+  overflow: hidden;
+
+  padding: 180px 0 140px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #030712,
+      #081a35,
+      #123663
+    );
+}
+
+/* Grid */
+
+.case-grid {
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    linear-gradient(
+      rgba(255,255,255,.04) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255,255,255,.04) 1px,
+      transparent 1px
+    );
+
+  background-size: 70px 70px;
+
+  opacity: .6;
+}
+
+/* Glows */
+
+.case-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(120px);
+}
+
+.glow-one {
+  width: 350px;
+  height: 350px;
+
+  background: rgba(37,99,235,.22);
+
+  top: -100px;
+  left: -100px;
+}
+
+.glow-two {
+  width: 450px;
+  height: 450px;
+
+  background: rgba(96,165,250,.15);
+
+  right: -150px;
+  top: 20%;
+}
+
+.glow-three {
+  width: 300px;
+  height: 300px;
+
+  background: rgba(59,130,246,.12);
+
+  bottom: -100px;
+  left: 40%;
+}
+
+/* Content */
+
+.case-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+
+.case-badge {
+  display: inline-flex;
+
+  padding: 12px 22px;
+
+  border-radius: 50px;
+
+  background:
+    rgba(255,255,255,.08);
+
+  border:
+    1px solid rgba(255,255,255,.1);
+
+  color: #93c5fd;
+
+  font-weight: 600;
+
+  margin-bottom: 30px;
+}
+
+.case-title {
+  font-size: clamp(3rem, 6vw, 6rem);
+  font-weight: 900;
+
+  line-height: 1.05;
+
+  margin-bottom: 30px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ffffff,
+      #93c5fd,
+      #60a5fa
+    );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.case-description {
+  max-width: 950px;
+
+  margin: auto;
+
+  color:
+    rgba(255,255,255,.78);
+
+  font-size: 18px;
+
+  line-height: 2;
+}
+
+/* Note Box */
+
+.case-note-box {
+  margin: 45px auto 0;
+
+  max-width: 900px;
+
+  padding: 25px 30px;
+
+  border-radius: 22px;
+
+  background:
+    rgba(255,255,255,.06);
+
+  border:
+    1px solid rgba(255,255,255,.08);
+
+  color:
+    rgba(255,255,255,.85);
+
+  backdrop-filter: blur(20px);
+}
+
+.case-note-box strong {
+  color: #60a5fa;
+}
+
+/* Floating Pills */
+
+.success-pill {
+  position: absolute;
+
+  padding: 14px 22px;
+
+  border-radius: 50px;
+
+  background:
+    rgba(255,255,255,.08);
+
+  border:
+    1px solid rgba(255,255,255,.1);
+
+  color: white;
+
+  backdrop-filter: blur(12px);
+
+  font-size: 14px;
+}
+
+.pill-1 {
+  top: 22%;
+  left: 8%;
+}
+
+.pill-2 {
+  top: 32%;
+  right: 8%;
+}
+
+.pill-3 {
+  bottom: 20%;
+  right: 18%;
+}
+
+/* Responsive */
+
+@media (max-width: 991px) {
+
+  .case-study-hero {
+    padding: 130px 0 100px;
+  }
+
+  .case-description {
+    font-size: 16px;
+  }
+
+  .success-pill {
+    display: none;
+  }
+
+  .case-note-box {
+    padding: 20px;
+  }
+}
+
+.growth-blueprint-section{
+  padding:120px 0;
+  position:relative;
+  overflow:hidden;
+
+  background:
+  linear-gradient(
+  135deg,
+  #030712,
+  #081a35,
+  #123663
+  );
+}
+
+.blueprint-header{
+  text-align:center;
+  margin-bottom:90px;
+}
+
+.blueprint-header h2{
+  font-size:58px;
+  font-weight:800;
+
+  background:
+  linear-gradient(
+  90deg,
+  #fff,
+  #60a5fa
+  );
+
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.framework-map{
+  position:relative;
+
+  display:grid;
+  grid-template-columns:
+  repeat(2,1fr);
+
+  gap:70px;
+
+  margin-bottom:120px;
+}
+
+.framework-node h3{
+  color:#60a5fa;
+  margin-bottom:12px;
+}
+
+.framework-node p{
+  color:
+  rgba(255,255,255,.75);
+}
+
+.framework-line{
+  position:absolute;
+  background:#2563eb;
+  opacity:.25;
+}
+
+.case-blueprint{
+  max-width:900px;
+  margin:auto;
+}
+
+.case-title-wrap span{
+  color:#60a5fa;
+}
+
+.case-title-wrap h2{
+  color:white;
+  font-size:46px;
+}
+
+.case-section{
+  position:relative;
+  padding-left:40px;
+  margin-top:50px;
+}
+
+.case-section::before{
+  content:"";
+
+  position:absolute;
+  left:0;
+  top:8px;
+
+  width:12px;
+  height:12px;
+
+  border-radius:50%;
+
+  background:#60a5fa;
+
+  box-shadow:
+  0 0 25px #60a5fa;
+}
+
+.case-section h3{
+  color:white;
+}
+
+.case-section p{
+  color:
+  rgba(255,255,255,.78);
+}

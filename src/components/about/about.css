@@ -158,7 +158,7 @@
 
 .who-section {
   position: relative;
-  padding: 120px 0;
+  padding:40px;
   background: #ffffff;
   overflow: hidden;
 }
@@ -330,7 +330,7 @@
 
 .mission-section {
   position: relative;
-  padding: 120px 0;
+  padding:40px;
   overflow: hidden;
   background: linear-gradient(
     135deg,
@@ -520,7 +520,7 @@
 
 .trust-section {
   position: relative;
-  padding: 120px 0;
+  padding:40px;
   overflow: hidden;
   background:
     radial-gradient(circle at top left,
@@ -825,5 +825,166 @@
 
   .expert-card {
     padding: 24px;
+  }
+}
+
+.attendee-growth-section {
+  padding: 120px 0;
+  background: #050816;
+  position: relative;
+  overflow: hidden;
+}
+
+.attendee-growth-section::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: rgba(99, 102, 241, 0.15);
+  border-radius: 50%;
+  top: -200px;
+  left: -150px;
+  filter: blur(120px);
+}
+
+.attendee-growth-section::after {
+  content: "";
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  background: rgba(6, 182, 212, 0.15);
+  border-radius: 50%;
+  bottom: -200px;
+  right: -100px;
+  filter: blur(120px);
+}
+
+.section-header {
+  max-width: 850px;
+  margin: auto;
+  margin-bottom: 70px;
+  position: relative;
+  z-index: 2;
+}
+
+.section-badge {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 50px;
+  background: rgba(99, 102, 241, 0.15);
+  color: #818cf8;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.section-header h2 {
+  color: #fff;
+  font-size: clamp(2rem, 5vw, 3.8rem);
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.section-header p {
+  color: rgba(255,255,255,0.75);
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.strategy-card {
+  height: 100%;
+  display: flex;
+  gap: 25px;
+  padding: 32px;
+  border-radius: 24px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(20px);
+  transition: all 0.4s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.strategy-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(99,102,241,0.5);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.35);
+}
+
+.card-number {
+  min-width: 70px;
+  height: 70px;
+  border-radius: 18px;
+  background: linear-gradient(
+    135deg,
+    #6366f1,
+    #06b6d4
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 800;
+  color: white;
+}
+
+.strategy-card h3 {
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.strategy-card p {
+  color: rgba(255,255,255,0.7);
+  line-height: 1.8;
+  margin: 0;
+}
+
+.bottom-highlight {
+  margin-top: 70px;
+  text-align: center;
+  padding: 40px;
+  border-radius: 30px;
+  background: linear-gradient(
+    135deg,
+    rgba(99,102,241,0.15),
+    rgba(6,182,212,0.15)
+  );
+  border: 1px solid rgba(255,255,255,0.08);
+  position: relative;
+  z-index: 2;
+}
+
+.bottom-highlight p {
+  color: white;
+  font-size: 20px;
+  line-height: 1.9;
+  margin: 0;
+  max-width: 950px;
+  margin-inline: auto;
+}
+
+@media (max-width: 991px) {
+  .attendee-growth-section {
+    padding: 80px 0;
+  }
+
+  .strategy-card {
+    padding: 24px;
+    flex-direction: column;
+  }
+
+  .card-number {
+    width: 65px;
+    height: 65px;
+  }
+
+  .bottom-highlight {
+    padding: 30px 20px;
+  }
+
+  .bottom-highlight p {
+    font-size: 16px;
   }
 }

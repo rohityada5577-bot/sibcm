@@ -15,7 +15,7 @@ export default function RegistrationsSection() {
       <div className="container position-relative">
 
         {/* Header */}
-        <div className="row align-items-center mb-5 pb-4">
+        <div className="row align-items-center">
 
           <div className="col-lg-7">
             <span className="reg-badge">

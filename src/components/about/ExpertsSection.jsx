@@ -1,9 +1,9 @@
 "use client";
 
 import "./about.css";
-import { expertsData } from "./dada";
+import { expertsData } from "./data";
 
-export default function ExpertsSection() {
+export default function ExpertsSection({data = expertsData }) {
   return (
     <section className="experts-section">
       <div className="experts-shape experts-shape-1"></div>
@@ -15,18 +15,18 @@ export default function ExpertsSection() {
 
           <div className="col-lg-6">
             <span className="experts-badge">
-              {expertsData.badge}
+              {data.badge}
             </span>
 
-            <h2 className="experts-title">
-              {expertsData.title}
-              <span> {expertsData.highlight}</span>
+            <h2 className="whitebg-h2">
+              {data.title}
+              <span  className="gradient-heading"> {data.highlight}</span>
             </h2>
           </div>
 
           <div className="col-lg-6">
             <p className="experts-description">
-              {expertsData.description}
+              {data.description}
             </p>
           </div>
 
@@ -34,7 +34,7 @@ export default function ExpertsSection() {
 
         <div className="row g-4">
 
-          {expertsData.items.map((item) => (
+          {data.items.map((item) => (
             <div className="col-lg-6" key={item.id}>
               <div className="expert-card">
 

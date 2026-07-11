@@ -3,8 +3,10 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import "./about.css";
+import { seoAboutContent } from "./data";
 
-export default function AboutSection() {
+
+export default function AboutSection({data =  seoAboutContent }) {
   const titleRef = useRef(null);
   const textRef = useRef(null);
   const cardRef = useRef(null);
@@ -54,12 +56,12 @@ export default function AboutSection() {
           <div className="col-lg-6">
 
             <span className="about-badge">
-              OUR STORY
+                {data.badge}
             </span>
 
             <h2 ref={titleRef} className="about-title">
-             About Our Conference Growth 
-              <span> Marketing Agency</span>
+               {data.title}
+              <span> {data.titleHighlight}</span>
             </h2>
 
          
@@ -73,14 +75,14 @@ export default function AboutSection() {
               <div className="comparison-box old-way">
                
                 <p>
-                 We built this agency for one reason: conferences were being underserved. The most valuable industry events, the ones that bring together the sharpest minds in healthcare, technology, finance, and beyond, were being marketed like commodity products. Generic ad campaigns. Spray-and-pray emails. Zero strategy
+                {data.oldWay}
                 </p>
               </div>
 
               <div className="comparison-box our-way">
                 
                 <p>
-                 We decided to do it differently. From day one, our entire agency has been structured around one goal: helping conferences fill seats with the right people. Not impressions. Not clicks. Registrations.
+                {data.newWay}
                 </p>
               </div>
 
