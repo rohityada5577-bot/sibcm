@@ -23,7 +23,7 @@ export default function Page() {
         <IndustryHero />
         <IndustryMarketingSection />
         <FinanceEducationSection />
-        <IndustryStrategies />
+        {/* <IndustryStrategies /> */}
         {/* <FinanceEventsHero />
         <EducationConferenceHero />
         <IndustryStrategiesMatrix /> */}
