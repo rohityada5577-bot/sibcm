@@ -2,7 +2,7 @@
 import IndustryHero from "@/components/industries/IndustryHero";
 import IndustryMarketingSection from "@/components/industries/IndustryMarketingSection";
 import FinanceEducationSection from "@/components/industries/FinanceEducationSection";
-import IndustryStrategies from "@/components/industries/IndustryStrategies";
+// import IndustryStrategies from "@/components/industries/IndustryStrategies";
 // import HealthcareRegistryHero from "@/components/industries/HealthcareRegistryHero";
 // import FinanceEventsHero from "@/components/industries/FinanceEventsHero";
 // import EducationConferenceHero from "@/components/industries/EducationConferenceHero";
