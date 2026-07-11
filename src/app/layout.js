@@ -1,7 +1,7 @@
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 import BootstrapClient from "@/components/BootstrapClient";
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
+// import Navbar from "@/components/layout/Navbar";
+// import Footer from "@/components/layout/Footer";
 // import SiboAssistant from "@/components/common/SiboAssistant";
 import "./globals.css";
 
@@ -10,10 +10,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <BootstrapClient />
-        <Navbar />
+        {/* <Navbar /> */}
         {children}
         {/* <SiboAssistant /> */}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
