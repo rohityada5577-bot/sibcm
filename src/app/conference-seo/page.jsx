@@ -6,11 +6,6 @@ import RankingConference from "@/components/Conference_SEO/RankingConference";
 import LandingSeoSection from "@/components/Conference_SEO/LandingSeoSection";
 import OrganicGrowthSection from "@/components/Conference_SEO/OrganicGrowthSection";
 import SEOImportance from "@/components/Conference_SEO/SEOImportance";
-
-
-
-
-
 import FaqSection from "@/components/common/FaqSection";
 
 export default function Page() {
@@ -24,9 +19,6 @@ export default function Page() {
       <LandingSeoSection/>
       <OrganicGrowthSection />
       <SEOImportance />
-      
-     
-
       <FaqSection />
    
      
