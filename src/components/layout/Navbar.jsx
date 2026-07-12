@@ -1,129 +1,18 @@
-// "use client";
 
-// import { useState } from "react";
-// import Link from "next/link";
-// import Image from "next/image";
-// // import Button from "../common/Button";
-// import Button from "@/components/common/Button";
-
-// export default function Navbar() {
-//   const [isOpen, setIsOpen] = useState(false);
-
-//   return (
-//     <>
-//       <nav className="navbar bg-white sticky-top py-2 border-bottom border-light">
-//         <div className="container-fluid px-lg-5 px-3 d-flex align-items-center justify-content-between">
-          
-//           {/* Brand Logo Image Integration */}
-//           <Link href="/" className="navbar-brand d-flex align-items-center m-0">
-//             <Image 
-//               src="/cmwlogo.webp" 
-//               alt="CMW Logo" 
-//               width={110} 
-//               height={55} 
-//               priority
-//               className="d-inline-block img-fluid"
-//               style={{ objectFit: "contain" }}
-//             />
-//           </Link>
-
-//           {/* Desktop Right Side (Hidden on Mobile) */}
-//           <div className="d-none d-md-flex align-items-center gap-4" style={{ fontSize: "15px" }}>
-//             <Link href="/about-us" className="text-dark text-decoration-none fw-medium hover-indigo">
-//               About
-//             </Link>
-//             <Link href="/" className="text-dark text-decoration-none fw-medium hover-indigo">
-//               Home
-//             </Link>
-//            <Button
-//            text="Get started"
-           
-//            />
-//           </div>
-
-//           {/* Mobile Hamburger Trigger (Hidden on Desktop) */}
-//           <button 
-//             className="d-md-none border-0 bg-transparent p-2 d-flex flex-column gap-1.5 justify-content-center align-items-center"
-//             style={{ width: "32px", height: "32px", cursor: "pointer" }}
-//             onClick={() => setIsOpen(!isOpen)}
-//             aria-label="Toggle menu"
-//           >
-//             <span className="burger-bar" style={{ transform: isOpen ? "rotate(45deg) translateY(6px)" : "none" }}></span>
-//             <span className="burger-bar" style={{ opacity: isOpen ? 0 : 1 }}></span>
-//             <span className="burger-bar" style={{ transform: isOpen ? "rotate(-45deg) translateY(-6px)" : "none" }}></span>
-//           </button>
-
-//         </div>
-//       </nav>
-
-//       {/* Mobile Drawer Overlay Panel */}
-//       <div className={`mobile-drawer ${isOpen ? "open" : ""}`}>
-//         <div className="p-4 d-flex flex-column h-100 justify-content-between">
-//           <div className="d-flex flex-column gap-4 pt-5">
-//             <Link 
-//               href="/about-us" 
-//               className="text-dark text-decoration-none fs-4 fw-semibold"
-//               onClick={() => setIsOpen(false)}
-//             >
-//               About
-//             </Link>
-//           </div>
-//           <div>
-//             <Link 
-//               href="/get-started" 
-//               className="btn text-white fw-medium w-100 py-3 fs-5 rounded-3"
-//               style={{ backgroundColor: "#6366F1", border: "none" }}
-//               onClick={() => setIsOpen(false)}
-//             >
-//               Get started
-//             </Link>
-//           </div>
-//         </div>
-//       </div>
-
-//       {/* Local Responsive Style Embeds */}
-//       <style>{`
-//         .burger-bar {
-//           display: block;
-//           width: 24px;
-//           height: 2px;
-//           background-color: #111827;
-//           transition: all 0.2s ease-in-out;
-//         }
-//         .mobile-drawer {
-//           position: fixed;
-//           top: 73px; /* Height adjustment right beneath header border */
-//           left: 0;
-//           width: 100vw;
-//           height: calc(100vh - 73px);
-//           background-color: #ffffff;
-//           z-index: 1040;
-//           transform: translateX(100%);
-//           transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-//         }
-//         .mobile-drawer.open {
-//           transform: translateX(0);
-//         }
-//         .hover-indigo:hover {
-//           color: #6366F1 !important;
-//         }
-//         body {
-//           overflow: ${isOpen ? "hidden" : "auto"};
-//         }
-//       `}</style>
-//     </>
-//   );
-// }
 
 "use client";
 
+import { useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 export default function Navbar() {
-  const services = [
+  useEffect(() => {
+    import("bootstrap").catch(() => {});
+  }, []);
+
+   const services = [
     { name: "Conference Promotion", href: "/conference-promotion" },
     { name: "Conference SEO", href: "/conference-seo" },
     { name: "PPC Advertising", href: "/ppc-advertising" },
@@ -382,4 +271,7 @@ export default function Navbar() {
       `}</style>
     </>
   );
+
+  
 }
+
