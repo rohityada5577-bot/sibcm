@@ -1,5 +1,5 @@
 
-import FaqSection from "@/components/common/FaqSection";
+// import FaqSection from "@/components/common/FaqSection";
 import ContactHero from "@/components/contact/ContactHero";
 import FreeConsultation from "@/components/contact/FreeConsultation";
 import ProposalSection from "@/components/contact/ProposalSection";
@@ -21,7 +21,7 @@ export default function Page() {
       <GrowthPlanSection />
       <ContactSupport />
         
-        <FaqSection />
+        {/* <FaqSection /> */}
         
    
      
