@@ -27,17 +27,17 @@ export default function Navbar() {
     { name: "Virtual Events", href: "/virtual-events" },
   ];
 
-  const industries = [
-    { name: "Healthcare", href: "/healthcare" },
-    { name: "Technology", href: "/technology" },
-    { name: "Finance", href: "/finance" },
-    { name: "Education", href: "/education" },
-    { name: "Manufacturing", href: "/manufacturing" },
-  ];
+  // const industries = [
+  //   { name: "Healthcare", href: "/healthcare" },
+  //   { name: "Technology", href: "/technology" },
+  //   { name: "Finance", href: "/finance" },
+  //   { name: "Education", href: "/education" },
+  //   { name: "Manufacturing", href: "/manufacturing" },
+  // ];
 
   const resources = [
-    { name: "Blog", href: "/blog" },
-    { name: "Guide", href: "/guide" },
+    // { name: "Blog", href: "/blog" },
+    // { name: "Guide", href: "/guide" },
     { name: "Case Studies", href: "/case-studies" },
     { name: "Testimonials", href: "/testimonials" },
     { name: "Pricing", href: "/pricing" },
