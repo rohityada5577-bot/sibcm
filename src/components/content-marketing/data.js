@@ -286,3 +286,28 @@ export const contentMarketingData = {
     },
   ],
 };
+
+
+export const conferenceContentMarketingFaqData = {
+  title: "Frequently Asked Questions",
+  subtitle:
+    "Learn how content marketing helps conferences build authority, increase organic visibility, and drive more event registrations.",
+
+  faqs: [
+    {
+      question: "How does content marketing help conferences?",
+      answer:
+        "Content marketing helps conferences by building organic search visibility, establishing event authority, and attracting potential attendees through valuable information rather than interruptive advertising. When your conference publishes a definitive annual industry trends report, for example, it ranks in Google for relevant searches, attracts thousands of your ideal attendees to your website, captures their email addresses, and positions your event as the authority in your niche — all before a single registration campaign email is sent."
+    },
+    {
+      question: "What content should I create for my conference?",
+      answer:
+        "The most effective conference content includes: speaker interview articles and videos, industry trend and prediction reports, session topic deep-dives, attendee success story features, event preparation guides (what to expect, who to meet, how to get the most from attending), and post-conference recap content. Content should be planned 12 months in advance and published on a consistent schedule to build search authority progressively."
+    },
+    {
+      question: "How long does content marketing take to work for conferences?",
+      answer:
+        "Content marketing for conferences typically produces its first meaningful organic traffic within 2–4 months of consistent publishing. More competitive keywords take 4–6 months to rank well. The investment compounds — content published 12 months before your event will be generating significant organic traffic and registrations by the time your registration window opens. This is why starting content marketing 9–12 months before your event delivers the strongest overall ROI."
+    }
+  ]
+};

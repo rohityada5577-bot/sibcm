@@ -13,6 +13,7 @@ import ExpertsSection from "@/components/about/ExpertsSection";
 import { IncreasingOpenRatesandClickRates } from "@/components/email-marketing/data";
 import { NurturingLeadsforEventSignups } from "@/components/email-marketing/data";
 import { WhyEmailMarketingWorksforConferences } from "@/components/email-marketing/data";
+import { conferenceEmailMarketingFaqData } from "@/components/email-marketing/data";
 import BudgetStrategy from "@/components/PPCHero/BudgetStrategy";
 
 export default function Page() {
@@ -26,7 +27,7 @@ export default function Page() {
           <WhoWeAreBento  data={NurturingLeadsforEventSignups} />
           <BudgetStrategy  data={ WhyEmailMarketingWorksforConferences }/>
          
-      <FaqSection />
+      <FaqSection data={conferenceEmailMarketingFaqData} />
    
      
     

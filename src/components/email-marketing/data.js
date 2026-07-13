@@ -205,3 +205,33 @@ export const WhyEmailMarketingWorksforConferences = {
       "Email is the only channel where you fully own your audience — no algorithm dependency.",
   },
 };
+
+
+export const conferenceEmailMarketingFaqData = {
+  title: "Frequently Asked Questions",
+  subtitle:
+    "Discover how email marketing helps conferences increase registrations, engage attendees, and drive event attendance through strategic campaigns.",
+
+  faqs: [
+    {
+      question: "How do I invite people to a conference by email?",
+      answer:
+        "An effective conference invitation email should: open with a compelling subject line that communicates the event's value proposition, lead with your most impressive speaker or session highlight, clearly state the event date, location, and format, explain the tangible benefits of attending (what will the reader walk away with?), include a single clear registration CTA with a link, and create urgency through early-bird pricing or limited availability messaging. The email should be concise — 150–250 words — and mobile-optimized."
+    },
+    {
+      question: "What is an event email marketing strategy?",
+      answer:
+        "An event email marketing strategy is a planned sequence of emails sent to a segmented audience across the entire event promotion timeline — from initial announcement through post-event follow-up. It includes: list building and segmentation, automated drip sequences for different audience segments, broadcast campaigns for major announcements, and re-engagement campaigns for cold prospects. The strategy is built around your event's specific registration timeline and audience motivations."
+    },
+    {
+      question: "How many emails should I send before a conference?",
+      answer:
+        "For most conferences, we recommend 8–14 emails per recipient across the full promotion window, depending on the length of the campaign. This typically breaks down as: 1–2 announcement emails, 3–5 drip emails featuring speakers and agenda content, 2–3 early-bird deadline reminder emails, 1–2 last-chance urgency emails, and 1 confirmation email. The key is ensuring every email delivers genuine value — not just promotional messages."
+    },
+    {
+      question: "How do I build an email list for my conference?",
+      answer:
+        "Building a conference email list starts with: an SEO-optimized event website with an email capture form, a lead magnet such as a free industry report or speaker preview, LinkedIn content marketing that drives traffic to your landing page, co-promotion with speakers and sponsors to their existing audiences, and past attendee lists from previous events. We help build and grow email lists as part of our full conference marketing engagements."
+    }
+  ]
+};

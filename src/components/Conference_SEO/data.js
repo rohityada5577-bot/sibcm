@@ -212,3 +212,32 @@ export const seoPoints = [
       "A well-ranked conference website reduces your paid advertising dependence and cost-per-registration over time"
   }
 ];
+
+export const conferenceSeoFaqData = {
+  title: "Frequently Asked Questions",
+  subtitle:
+    "Learn how conference SEO drives organic traffic, improves search visibility, and increases event registrations.",
+
+  faqs: [
+    {
+      question: "How does SEO help conferences get attendees?",
+      answer:
+        "SEO helps conferences get attendees by making your event website visible in Google search results when your target audience searches for events in your niche. When someone searches 'cybersecurity conference 2026' or 'healthcare marketing summit registration', a well-optimized conference website appears at the top of results — capturing highly motivated, high-intent traffic that converts to registrations at a higher rate than cold advertising traffic."
+    },
+    {
+      question: "How long does conference SEO take to work?",
+      answer:
+        "Conference SEO typically begins showing measurable results within 2–4 months of implementation. Technical and on-page optimizations often produce ranking improvements within 4–8 weeks. New content pieces generally rank within 2–3 months for lower-competition keywords. For this reason, we recommend starting SEO 6–12 months before your event date so organic traffic is building strong momentum by the time your registration window opens."
+    },
+    {
+      question: "What keywords should I target for my conference website?",
+      answer:
+        "Your conference keyword strategy should target three types of searches: branded searches (your event name and speakers' names), category searches ([industry] conference [year], [topic] summit), and intent searches (how to register for [event type], best [industry] conferences to attend). The right keyword mix depends on your event's niche, geography, and audience maturity. Our SEO team conducts full keyword research as the first step of every conference SEO engagement."
+    },
+    {
+      question: "Can SEO increase conference registrations directly?",
+      answer:
+        "Yes. When your conference website ranks on Page 1 for high-intent keywords, you attract visitors who are actively searching for events like yours — people who are already motivated to attend. These organic visitors convert to registrations at significantly higher rates than cold paid advertising traffic. SEO is one of the most direct registration-driving channels available for conferences, especially over the medium to long term."
+    }
+  ]
+};

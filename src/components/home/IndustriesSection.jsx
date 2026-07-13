@@ -26,7 +26,7 @@ export default function IndustriesSection() {
           viewport={{ once: true }}
           variants={fadeUp}
         >
-          <span className="section-tag">Industries</span>
+          {/* <span className="section-tag">Industries</span> */}
 
           <h2>{industriesData.heading}</h2>
 

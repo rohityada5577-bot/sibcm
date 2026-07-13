@@ -6,6 +6,7 @@ import SponsorAcquisitionSection from "@/components/sponsormarketing//SponsorAcq
 import SponsorshipPackagesSection from "@/components/sponsormarketing/SponsorshipPackagesSection";
 import SponsorValueSection from "@/components/sponsormarketing/SponsorValueSection";
 import SponsorInvestmentSection from "@/components/sponsormarketing/SponsorInvestmentSection";
+import { conferenceSponsorshipFaqData } from "@/components/sponsormarketing/data";
 
 
 export default function Page() {
@@ -21,7 +22,7 @@ export default function Page() {
       
     
         
-          <FaqSection />
+          <FaqSection data={conferenceSponsorshipFaqData}/>
          
        
      

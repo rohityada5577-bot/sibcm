@@ -169,3 +169,32 @@ export const sponsorInvestmentData = {
     }
   ]
 };
+
+export const conferenceSponsorshipFaqData = {
+  title: "Frequently Asked Questions",
+  subtitle:
+    "Learn how conferences attract sponsors, build valuable partnerships, and create sponsorship opportunities that deliver measurable ROI.",
+
+  faqs: [
+    {
+      question: "How do conferences get sponsors?",
+      answer:
+        "Conferences attract sponsors through a combination of proactive outreach and passive visibility. Proactively, the most effective approach is building a targeted prospect list of companies who sell to your attendee audience, developing compelling sponsor packages with clear ROI metrics, and running a personalized multi-touch outreach campaign. Passively, a strong conference brand, growing attendee numbers, and an active online presence attract inbound sponsor interest from companies who discover your event organically."
+    },
+    {
+      question: "What do sponsors want from events?",
+      answer:
+        "Sponsors primarily want access to your audience and the opportunity to generate leads and brand awareness among your attendees. Specifically, they value: the quality and seniority of attendees (C-suite access commands premium rates), the relevance of attendees to their product or service, measurable lead generation during the event, brand association with a credible event brand, and the opportunity to demonstrate thought leadership through sponsored sessions or workshops."
+    },
+    {
+      question: "How much should I charge for conference sponsorships?",
+      answer:
+        "Conference sponsorship pricing depends on attendee quality, event scale, and industry. A general framework: title sponsorships for mid-size conferences (500–2,000 attendees) typically range from $25,000–$100,000+. Gold-level sponsorships range from $10,000–$40,000. Silver/supporting sponsorships range from $3,000–$10,000. Events with highly senior, high-purchasing-authority audiences (C-suite, board-level) command significantly higher rates. We help conferences benchmark and price their sponsorship packages competitively."
+    },
+    {
+      question: "How far in advance should I approach conference sponsors?",
+      answer:
+        "Begin sponsor outreach 9–12 months before your event. Corporate sponsorship budgets are often planned 6–12 months in advance, and the best sponsor slots (title, presenting, keynote) fill quickly for well-established events. Starting early also gives you time for multiple rounds of outreach and negotiation before your event's promotional timeline requires confirmed sponsor logos and benefits."
+    }
+  ]
+};

@@ -312,3 +312,47 @@ export const marketingChannelsData = {
     }
   ]
 };
+
+
+export const conferenceMarketingServicesFaqData = {
+  title: "Frequently Asked Questions",
+  subtitle:
+    "Learn how conference marketing services drive registrations, increase attendance, attract sponsors, and deliver measurable event growth.",
+
+  faqs: [
+    {
+      question: "What services increase conference attendance the most?",
+      answer:
+        "The services with the most direct impact on conference attendance are: email marketing (highest ROI channel, critical for converting awareness into registrations), LinkedIn advertising (most effective B2B targeting for professional audiences), Google Ads (for capturing high-intent searches), and SEO (for sustained organic visibility). Used together in a coordinated campaign, these channels consistently produce the strongest attendance growth. Research confirms that 94% of event teams rate pre-event email marketing as their most important promotional content, while paid advertising provides the immediate reach needed to fuel the email pipeline."
+    },
+    {
+      question: "What does end-to-end conference marketing cover?",
+      answer:
+        "End-to-end conference marketing covers the entire promotional lifecycle of your event — from initial audience research and website optimization through to post-event follow-up. This includes: strategy and planning, SEO content creation and technical optimization, paid advertising setup and management, email list building and sequence deployment, social media content and community management, speaker co-marketing coordination, registration page optimization, real-time performance reporting, and post-event audience nurturing for future events."
+    },
+    {
+      question:
+        "How long does it take for conference marketing services to produce results?",
+      answer:
+        "Paid advertising campaigns begin generating registrations within 24–72 hours of launch. Email campaigns typically produce their first wave of registrations within 3–7 days of deployment. SEO campaigns build organic registration traffic over 2–4 months but deliver the highest long-term ROI. The most effective approach combines all channels, with SEO and content starting 6–12 months out and paid ads and email campaigns intensifying in the final 8–12 weeks before your event."
+    },
+    {
+      question:
+        "Do you provide reporting on how many registrations your marketing generated?",
+      answer:
+        "Yes, attribution and registration tracking is central to everything we do. We set up UTM tracking, conversion tracking in Google Analytics and your CRM, and custom dashboards that show exactly how many registrations each channel and campaign is generating — along with cost-per-registration, click-through rates, and email engagement metrics. You have complete visibility at all times."
+    },
+    {
+      question:
+        "Can you help us attract sponsors in addition to attendees?",
+      answer:
+        "Yes. Sponsor acquisition marketing is an increasingly important service for conference organizers. We help by creating compelling sponsor-facing positioning materials, building outreach campaigns targeting prospective sponsors in your industry, and optimizing your digital presence to demonstrate audience size and quality to potential partners. Growing your attendee base also directly strengthens your ability to attract and retain sponsors."
+    },
+    {
+      question:
+        "What is your minimum engagement period for conference marketing?",
+      answer:
+        "We recommend a minimum of 3–4 months of marketing partnership to see meaningful, compounding results. Events with longer timelines (9–12 months before the event date) see the greatest ROI as SEO builds, email lists grow, and brand awareness accumulates before the paid advertising push begins. We also offer short-term rapid-deployment campaigns for events with compressed timelines."
+    }
+  ]
+};

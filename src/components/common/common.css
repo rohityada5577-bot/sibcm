@@ -362,3 +362,191 @@
     transform:translateY(-10px);
   }
 }
+
+
+
+/* =========================
+   FAQ SECTION - MODERN DARK UI
+========================= */
+
+.site-section {
+  position: relative;
+  padding: 100px 0;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at top left, rgba(37, 99, 235, 0.25), transparent 40%),
+    radial-gradient(circle at bottom right, rgba(59, 130, 246, 0.2), transparent 40%),
+    linear-gradient(135deg, #050816 0%, #0a1228 45%, #111827 100%);
+}
+
+.site-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 50px 50px;
+  pointer-events: none;
+}
+
+.site-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* =========================
+   HEADING
+========================= */
+
+.site-heading-wrap {
+  max-width: 850px;
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.site-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 50px;
+  background: rgba(37, 99, 235, 0.12);
+  border: 1px solid rgba(96, 165, 250, 0.25);
+  color: #93c5fd;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.site-title-lg {
+  color: #fff;
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 18px;
+  letter-spacing: -1px;
+}
+
+.site-title-lg span {
+  background: linear-gradient(90deg, #60a5fa, #2563eb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.site-text {
+  color: #94a3b8;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* =========================
+   ACCORDION
+========================= */
+
+.accordion {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.accordion-item {
+  background: rgba(15, 23, 42, 0.75) !important;
+  border: 1px solid rgba(59, 130, 246, 0.15) !important;
+  border-radius: 18px !important;
+  margin-bottom: 18px;
+  overflow: hidden;
+  backdrop-filter: blur(18px);
+  transition: all 0.35s ease;
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255,255,255,0.03);
+}
+
+.accordion-item:hover {
+  transform: translateY(-4px);
+  border-color: rgba(96, 165, 250, 0.4) !important;
+  box-shadow:
+    0 15px 40px rgba(37, 99, 235, 0.2),
+    0 0 25px rgba(59, 130, 246, 0.15);
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.accordion-button {
+  background: transparent !important;
+  color: #ffffff !important;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 24px 28px;
+  box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+  background: rgba(37, 99, 235, 0.08) !important;
+  color: #ffffff !important;
+}
+
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+
+.accordion-button::after {
+  filter: brightness(0) invert(1);
+  transform: scale(1.1);
+}
+
+/* =========================
+   BODY
+========================= */
+
+.accordion-body {
+  color: #cbd5e1;
+  font-size: 1rem;
+  line-height: 1.9;
+  padding: 0 28px 28px;
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+/* =========================
+   ACTIVE GLOW
+========================= */
+
+.accordion-item:has(.accordion-button:not(.collapsed)) {
+  border-color: rgba(96, 165, 250, 0.45) !important;
+  box-shadow:
+    0 0 0 1px rgba(96, 165, 250, 0.2),
+    0 0 40px rgba(37, 99, 235, 0.2);
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+  .site-section {
+    padding: 70px 0;
+  }
+
+  .site-title-lg {
+    font-size: 2.3rem;
+  }
+
+  .accordion-button {
+    font-size: 1rem;
+    padding: 20px;
+  }
+
+  .accordion-body {
+    padding: 0 20px 20px;
+    font-size: 0.95rem;
+  }
+}

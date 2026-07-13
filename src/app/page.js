@@ -9,6 +9,8 @@ import IndustriesSection from "@/components/home/IndustriesSection";
 
 import FaqSection from "@/components/common/FaqSection";
 
+import { conferenceSeoFaqData } from "@/components/home/data";
+
 
 
 export default function HomePage() {
@@ -22,7 +24,7 @@ export default function HomePage() {
       <ChannelsSection />
       <WhyChoose />
       <IndustriesSection />
-      <FaqSection />
+      <FaqSection    data={conferenceSeoFaqData}  />
       {/* <Testimonials /> */}
 
     </>

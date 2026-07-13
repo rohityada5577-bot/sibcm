@@ -232,3 +232,33 @@ export const awarenessData = {
     "Speaker and attendee sharing multiplies your organic reach"
   ]
 };
+
+
+export const conferenceSocialMediaFaqData = {
+  title: "Frequently Asked Questions",
+  subtitle:
+    "Learn how to use social media marketing to promote your conference, increase visibility, engage attendees, and drive registrations.",
+
+  faqs: [
+    {
+      question: "How do I promote my conference on social media?",
+      answer:
+        "The most effective social media conference promotion strategy combines organic content with paid advertising on 2–3 platforms. Start with LinkedIn for B2B events (organic posts, speaker spotlights, and LinkedIn Ads), add Facebook for community building and retargeting, and consider Instagram for visual storytelling. Post consistently — at least 3–5 times per week — with a mix of speaker content, session previews, testimonials, and industry insights. Equip your speakers with ready-to-share content to multiply your organic reach."
+    },
+    {
+      question: "Which social media platform is best for promoting a conference?",
+      answer:
+        "For B2B and professional conferences, LinkedIn is consistently the most effective platform, offering precise professional targeting and a highly engaged professional audience. For consumer-facing events and conferences targeting younger audiences, Instagram and TikTok deliver stronger reach and engagement. Facebook is most effective for community building, event RSVPs, and retargeting. Most conferences achieve the best results by leading with LinkedIn and using Instagram/Facebook for supporting roles."
+    },
+    {
+      question: "Is TikTok good for event marketing?",
+      answer:
+        "TikTok is increasingly effective for event marketing, particularly for technology conferences, creative industry events, and events targeting professionals under 40. TikTok's organic reach potential is unmatched — a single well-produced video can reach tens of thousands of relevant viewers at zero cost. TikTok Ads are also developing stronger professional targeting capabilities. For conferences with video-friendly content and younger target demographics, TikTok is worth testing as a promotion channel."
+    },
+    {
+      question: "How many social media posts should I publish before a conference?",
+      answer:
+        "We recommend a minimum of 3–4 posts per week on LinkedIn and Instagram in the 3 months leading up to your conference. Content should follow a progression: early phases focus on speaker announcements and early-bird promotion; mid-phases share session previews, attendee testimonials, and agenda updates; final phases use countdown content and urgency messaging. Your social content calendar should be planned at least 6–8 weeks in advance."
+    }
+  ]
+};

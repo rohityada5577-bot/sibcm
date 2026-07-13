@@ -11,6 +11,7 @@ import BudgetStrategy from "@/components/PPCHero/BudgetStrategy";
 import LinkedInMarketingSection from "@/components/social-media-marketing/LinkedInMarketingSection";
 import SocialPromotionSection from "@/components/social-media-marketing/SocialPromotionSection";
 import SocialAwarenessSection from "@/components/social-media-marketing/SocialAwarenessSection";
+  import { conferenceSocialMediaFaqData    } from "@/components/social-media-marketing/data";
 
 
 
@@ -32,7 +33,7 @@ export default function Page() {
 
       
          
-      <FaqSection />
+      <FaqSection data={conferenceSocialMediaFaqData }/>
    
      
     

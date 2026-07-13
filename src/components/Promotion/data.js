@@ -242,3 +242,39 @@ export const conferenceAttendanceData = {
     button: "Book a Free Strategy Call"
   }
 };
+
+
+
+export const conferencePromotionFaqData = {
+  title: "Frequently Asked Questions",
+  subtitle:
+    "Answers to the most common questions about conference promotion, attendee acquisition, event marketing strategies, and registration growth.",
+
+  faqs: [
+    {
+      question: "How do I promote a conference?",
+      answer:
+        "Promoting a conference effectively requires a multi-channel strategy starting 6–12 months before the event. The most important channels are SEO (for organic search visibility), email marketing (for conversion), LinkedIn advertising (for B2B professional targeting), and speaker co-marketing (to tap existing networks). Start by defining your ideal attendee, build your messaging around their motivations, and deploy campaigns across all channels in a coordinated timeline."
+    },
+    {
+      question: "How do I get people to attend my event?",
+      answer:
+        "Getting people to attend your event requires addressing three things: awareness (do they know your event exists?), motivation (do they understand why attending is worth their time and money?), and friction reduction (is it easy to register?). We address all three through targeted advertising, compelling email sequences, and optimized registration landing pages."
+    },
+    {
+      question: "How early should conference promotion start?",
+      answer:
+        "Conference promotion should start at least 6–9 months before the event for maximum effectiveness. SEO and content campaigns should begin first, followed by speaker announcements and early-bird email campaigns at 4–6 months out, with paid advertising and final push campaigns launching 8–12 weeks before the event date."
+    },
+    {
+      question: "What is the best way to promote a conference for free?",
+      answer:
+        "The most effective free conference promotion methods include: optimizing your event website for SEO, building an active LinkedIn presence and event page, leveraging speaker networks for organic co-promotion, submitting your event to industry event calendars and directories, and creating shareable content that your target audience wants to share. Free channels take more time but deliver the highest long-term ROI."
+    },
+    {
+      question: "How much does it cost to promote a conference?",
+      answer:
+        "Conference promotion costs vary based on event size, target audience, and timeline. Small conferences typically invest $3,000–$15,000 in promotion. Mid-size conferences often invest $15,000–$40,000. Large conferences and summits may invest $50,000–$200,000+. The earlier you start, the more cost-effective your promotion becomes, as organic channels reduce dependence on expensive paid advertising."
+    }
+  ]
+};

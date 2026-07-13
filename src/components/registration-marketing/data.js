@@ -157,3 +157,32 @@ export const registrationMarketingData = {
       "Registration marketing is the discipline of treating conference ticket sales with the same rigor and data-driven optimization that the best e-commerce brands apply to product sales. Every conversion point is measured, every drop-off point is identified and fixed, and every campaign is evaluated by its registration cost and volume. This systematic approach to registration is what separates conferences that consistently fill capacity from those that struggle with chronic under-attendance."
   }
 };
+
+export const conferenceRegistrationMarketingFaqData = {
+  title: "Frequently Asked Questions",
+  subtitle:
+    "Learn proven strategies to increase conference registrations, improve conversion rates, and maximize attendee growth.",
+
+  faqs: [
+    {
+      question: "How do I get more people to register for my conference?",
+      answer:
+        "Getting more registrations requires a two-part approach: driving more qualified traffic to your registration page, and converting a higher percentage of that traffic into registrants. To drive more traffic, use targeted paid advertising, SEO, email marketing, and speaker amplification. To improve conversion, optimize your landing page for speed, mobile experience, and persuasive content, simplify your registration form, add social proof, and create urgency through pricing deadlines."
+    },
+    {
+      question: "What increases event registrations most effectively?",
+      answer:
+        "The tactics that consistently produce the largest registration increases are: personalized email campaigns (especially to past attendees and warm leads), early-bird pricing with genuine deadlines, speaker announcements with built-in amplification from the speakers themselves, retargeting ads for website visitors who have not yet registered, and group registration incentives targeting corporate accounts. In our experience, combining all five simultaneously produces the fastest and largest registration growth."
+    },
+    {
+      question: "How do I improve my conference's conversion rate?",
+      answer:
+        "Improve conference conversion rate by: simplifying your registration form (fewer fields = higher completion rates), adding prominent social proof near the registration CTA, testing different headline and CTA button copy, ensuring your page loads in under 2 seconds on mobile, adding a money-back guarantee or risk reversal statement, and displaying the price savings from early-bird registration prominently. Small improvements to each element compound into significant overall conversion rate gains."
+    },
+    {
+      question: "How early should I open conference registration?",
+      answer:
+        "Opening registration early — ideally 9–12 months before the event — maximizes your registration window and allows early adopters and corporate budget planners to commit their budget to your event before competing events capture it. Early registrations also provide social proof ('1,200 people already registered') that drives later registrations through FOMO. Early-bird pricing tied to your registration launch gives immediate incentive to commit early."
+    }
+  ]
+};

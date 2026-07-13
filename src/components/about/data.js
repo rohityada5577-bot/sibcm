@@ -218,3 +218,40 @@ export const attendeeGrowthData = {
   footerText:
     "From there, we build a fully integrated conference marketing plan with clear milestones, channel allocations, and performance targets, and we execute it with precision."
 };
+
+
+export const conferenceMarketingAgencyFaqData = {
+  title: "Frequently Asked Questions",
+  subtitle:
+    "Everything you need to know about conference marketing agencies, event promotion, attendee acquisition, and registration growth.",
+
+  faqs: [
+    {
+      question: "Who is a conference marketing agency?",
+      answer:
+        "A conference marketing agency is a firm that specializes in promoting conferences, summits, and live professional events. Unlike general marketing agencies, conference marketing specialists understand event registration psychology, the unique timeline of event promotion, and the specific channels that drive professional audience acquisition. We are exclusively focused on growing conference attendance and registrations."
+    },
+    {
+      question: "How do event marketing agencies work?",
+      answer:
+        "Most event marketing agencies begin with a discovery and strategy phase, typically lasting 1–2 weeks, where they analyze your event, target audience, past marketing data, and competitive landscape. They then build and deploy a multi-channel campaign, combining SEO, paid advertising, email sequences, and social media, that is timed to your event's registration timeline. Throughout the campaign, a good agency provides regular performance reporting and actively optimizes channels based on what is working."
+    },
+    {
+      question:
+        "What makes your conference marketing team different from a general marketing agency?",
+      answer:
+        "The critical difference is specialization. Our team spends 100% of their working hours on conference and event marketing. This means we have developed specialized knowledge, frameworks, and tools, including custom email sequences built around event registration psychology, SEO strategies for event pages, and paid ad structures tuned to convert event interest into paid registrations. A general agency will apply the same frameworks they use for product launches or brand awareness campaigns, which rarely translate effectively to the event world."
+    },
+    {
+      question:
+        "Do you work with conferences outside our country or region?",
+      answer:
+        "Yes. We work with conferences and summits globally, across North America, Europe, Asia-Pacific, and the Middle East. Our digital marketing expertise is geography-flexible, and we have experience targeting professional audiences across multiple markets simultaneously."
+    },
+    {
+      question: "How do you measure success in conference marketing?",
+      answer:
+        "The primary metric we track is registrations, the number of paid or confirmed attendees your conference gains as a direct result of our marketing efforts. Secondary metrics include cost-per-registration, website traffic from marketing channels, email open and click rates, and landing page conversion rates. We provide real-time dashboard access so you always know exactly how your campaign is performing."
+    }
+  ]
+};

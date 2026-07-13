@@ -178,3 +178,32 @@ export const ppcBenefitsData = {
     }
   ]
 };
+
+export const conferencePpcFaqData = {
+  title: "Frequently Asked Questions",
+  subtitle:
+    "Get answers to the most common questions about conference PPC advertising, Google Ads, LinkedIn Ads, and paid attendee acquisition.",
+
+  faqs: [
+    {
+      question: "Do Google Ads work for conferences?",
+      answer:
+        "Yes. Google Search Ads are highly effective for conferences because they capture professionals who are actively searching for events in your niche — the highest-intent audience available. When someone searches 'data science conference 2026' and your event appears at the top of results, the conversion rate is significantly higher than cold social media advertising. PPC typically generates registrations within 24–72 hours of launch, making it the fastest registration driver available."
+    },
+    {
+      question: "How do I advertise a conference online?",
+      answer:
+        "The most effective online advertising channels for conferences are Google Search Ads (for high-intent keyword targeting), LinkedIn Ads (for B2B professional audience targeting), and Facebook/Instagram Ads (for retargeting and broader awareness). The best approach combines all three: Google for intent-based capture, LinkedIn for professional outreach, and social platforms for retargeting website visitors who have not yet converted."
+    },
+    {
+      question: "How much should I spend on PPC for my conference?",
+      answer:
+        "PPC budgets for conferences vary based on event size, competition, and registration targets. A rule of thumb is to work backwards from your registration goal: if you need 500 registrations and your target cost-per-registration is $20 in ad spend, your budget is $10,000. Most mid-size conferences invest $5,000–$25,000 in paid advertising. We provide custom budget recommendations based on your specific event and registration targets."
+    },
+    {
+      question: "What is the best platform for conference PPC advertising?",
+      answer:
+        "For B2B and professional conferences, LinkedIn Ads consistently deliver the best audience quality because of their professional targeting capabilities. For driving high-intent search traffic, Google Search Ads are most effective. For budget efficiency and retargeting, Facebook/Instagram offer the lowest cost-per-click. The strongest conference PPC strategies use Google and LinkedIn as primary channels, with social platforms handling retargeting."
+    }
+  ]
+};

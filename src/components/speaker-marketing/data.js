@@ -128,3 +128,27 @@ export const speakerImpactContent = {
     ]
   }
 };
+
+export const conferenceSpeakerMarketingFaqData = {
+  title: "Frequently Asked Questions",
+  subtitle:
+    "Learn how speakers drive conference marketing success, increase event attendance, and amplify registrations through strategic promotion.",
+
+  faqs: [
+    {
+      question: "Why are speakers important for conference marketing?",
+      answer:
+        "Speakers are central to conference marketing for two reasons: they are the primary value proposition for most professional attendees (people register to learn from recognized experts), and they are powerful organic marketing channels in their own right. A well-promoted keynote speaker generates registration interest through their own networks, social followings, and online profiles — at no additional advertising cost. Conferences with strong speaker lineups consistently outperform those without, regardless of marketing budget."
+    },
+    {
+      question: "How do speakers increase event attendance?",
+      answer:
+        "Speakers increase event attendance through their own promotional activity (sharing the event with their networks), their name recognition (people search for and find your event through speaker name searches), and their credibility transfer (attendance of a respected speaker signals that the conference itself is credible and worth attending). Formalizing this through a structured co-marketing program — providing speakers with content, timing, and tracking — dramatically amplifies this natural effect."
+    },
+    {
+      question: "How do I promote conference speakers to attract attendees?",
+      answer:
+        "The most effective speaker promotion approach includes: dedicated speaker landing pages optimized for their name as a search term, staged social media announcements timed throughout your promotion calendar, speaker interview content distributed across your email and social channels, speaker amplification kits that make it easy for speakers to promote themselves, and email campaigns featuring individual speakers as the lead hook. Treat each speaker announcement as a mini-launch event with its own campaign."
+    }
+  ]
+};

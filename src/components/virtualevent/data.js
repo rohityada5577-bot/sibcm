@@ -132,3 +132,33 @@ export const virtualMarketingData = {
       "The paradox of virtual events is that despite being free of geographic barriers, they face more intense marketing competition than physical events. When anyone in the world can attend, you are competing against every virtual conference in your niche for the same attendees' time and attention. Professional marketing is not optional for virtual events — it is existential."
   }
 };
+
+export const virtualConferenceMarketingFaqData = {
+  title: "Frequently Asked Questions",
+  subtitle:
+    "Learn how to promote virtual conferences, increase webinar attendance, and maximize registrations for online and hybrid events.",
+
+  faqs: [
+    {
+      question: "How do I promote an online conference?",
+      answer:
+        "Promoting an online conference requires a multi-channel digital strategy that reaches your global audience wherever they are. The most effective channels are LinkedIn Ads (for professional B2B targeting), email marketing (for the highest conversion rates), SEO (for organic discovery), and speaker co-marketing (for network amplification). Critically, virtual conference promotion must also address the unique challenge of maintaining registrant commitment — a higher proportion of virtual registrants no-show than physical event attendees, requiring strong pre-event engagement sequences."
+    },
+    {
+      question: "What is virtual event marketing?",
+      answer:
+        "Virtual event marketing is the strategic promotion of online conferences, webinars, and hybrid events to drive registrations and maximize live attendance. It encompasses all the same channels as physical event marketing — SEO, paid advertising, email, and social media — but with additional focus on overcoming the commitment and engagement challenges specific to virtual formats. It also includes pre-event community building and participation strategies that increase live attendance rates."
+    },
+    {
+      question: "How do I increase webinar attendance?",
+      answer:
+        "The most effective ways to increase webinar attendance are: sending a series of reminder emails (1-week, 1-day, 1-hour, and 5-minute reminders dramatically increase live show rates), targeting highly relevant audiences with personalized invitations rather than broad blasts, featuring credible speakers prominently in all promotional materials, offering a compelling live-only incentive (exclusive Q&A, downloadable resource, prize), and keeping the webinar duration concise — 45-60 minutes is optimal for B2B webinar attendance."
+    },
+    {
+      question:
+        "How is marketing a virtual conference different from an in-person event?",
+      answer:
+        "Virtual conference marketing differs from in-person event marketing in several key ways: the audience is global rather than geographically constrained (expanding both reach and competition), commitment levels among registrants are lower (requiring stronger pre-event engagement), the venue and physical experience cannot be used as marketing hooks, and live attendance versus on-demand viewing is a critical additional conversion goal. Virtual conference marketing also places heavier emphasis on platform quality and interactive features as value differentiators."
+    }
+  ]
+};

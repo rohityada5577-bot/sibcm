@@ -6,6 +6,7 @@ import ExpertsSection from "@/components/about/ExpertsSection";
 import FaqSection from "@/components/common/FaqSection";
 import AttendeeGrowthSection from "@/components/about/AttendeeGrowthSection";
 import { missionExperienceContent } from "@/components/about/data";
+import { conferenceMarketingAgencyFaqData  } from "@/components/about/data";
 
 
 export default function Page() {
@@ -17,7 +18,7 @@ export default function Page() {
       <TrustSection />
       <ExpertsSection />
       <AttendeeGrowthSection />
-       <FaqSection />
+       <FaqSection data={conferenceMarketingAgencyFaqData } />
        
     
     </>

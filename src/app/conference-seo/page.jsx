@@ -7,6 +7,7 @@ import LandingSeoSection from "@/components/Conference_SEO/LandingSeoSection";
 import OrganicGrowthSection from "@/components/Conference_SEO/OrganicGrowthSection";
 import SEOImportance from "@/components/Conference_SEO/SEOImportance";
 import FaqSection from "@/components/common/FaqSection";
+import { conferenceSeoFaqData   } from "@/components/Conference_SEO/data";
 
 export default function Page() {
   return (
@@ -19,7 +20,7 @@ export default function Page() {
       <LandingSeoSection/>
       <OrganicGrowthSection />
       <SEOImportance />
-      <FaqSection />
+      <FaqSection  data={conferenceSeoFaqData}/>
    
      
     

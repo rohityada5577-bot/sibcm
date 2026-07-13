@@ -8,6 +8,7 @@ import ThoughtLeadershipSection from "@/components/content-marketing/ThoughtLead
 import ConferenceContentCalendar from "@/components/content-marketing/ConferenceContentCalendar";
 import ContentTrustSection from "@/components/content-marketing/ContentTrustSection";
 import ContentMarketingImpact from "@/components/content-marketing/ContentMarketingImpact";
+import { conferenceContentMarketingFaqData } from "@/components/content-marketing/data";
 
 
 
@@ -24,7 +25,7 @@ export default function Page() {
          <ContentTrustSection />
          <ContentMarketingImpact />
         
-        <FaqSection />
+        <FaqSection  data={conferenceContentMarketingFaqData}/>
    
      
     

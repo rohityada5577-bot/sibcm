@@ -237,3 +237,28 @@ export const websiteImpactData = {
 
   impact: "+200–400 Additional Registrations",
 };
+
+
+export const conferenceWebsiteDesignFaqData = {
+  title: "Frequently Asked Questions",
+  subtitle:
+    "Learn how effective conference website design improves attendee experience, increases registrations, and supports long-term event growth.",
+
+  faqs: [
+    {
+      question: "How do I design a conference website?",
+      answer:
+        "A conference website should be designed around the attendee's decision-making journey: first establishing credibility (speakers, past attendance data, social proof), then demonstrating value (agenda, sessions, networking opportunities), then removing friction from registration (simple form, clear pricing, multiple payment options). Start with a clear information architecture, prioritize mobile experience, and build conversion optimization into every design decision rather than treating it as an afterthought."
+    },
+    {
+      question: "What makes a good event website?",
+      answer:
+        "A good event website loads fast (under 2 seconds), immediately communicates the event's value proposition and key details (date, location, speakers), builds trust through social proof and professional design, makes registration easy and obvious on every page, and is fully optimized for mobile devices. It should also be SEO-optimized to attract organic traffic from professionals searching for events in your niche."
+    },
+    {
+      question: "How much does conference website design cost?",
+      answer:
+        "Conference website design costs range from $3,000–$5,000 for a template-based design to $10,000–$30,000+ for a fully custom, conversion-optimized site with advanced registration functionality. The ROI of investing in professional conference website design is almost always positive — given that the website is your primary registration conversion tool, even a modest improvement in conversion rate typically pays for the design investment in the first event."
+    }
+  ]
+};

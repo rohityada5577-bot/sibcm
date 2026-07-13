@@ -6,6 +6,7 @@ import BudgetStrategy from "@/components/PPCHero/BudgetStrategy";
 
  import RoiContentSection from "@/components/PPCHero/RoiContentSection";
   import PPCBenefits from "@/components/PPCHero/PPCBenefits";
+  import { conferencePpcFaqData   } from "@/components/PPCHero/data";
 
 
 
@@ -26,7 +27,7 @@ export default function Page() {
 <RoiContentSection />
 <PPCBenefits />
 {/* <ConferencePPCROI /> */}
-<FaqSection />
+<FaqSection  data={conferencePpcFaqData} />
    
      
     

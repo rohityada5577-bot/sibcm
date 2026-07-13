@@ -13,9 +13,9 @@ export default function VelocitySection() {
       <div className="container position-relative">
         <div className="row align-items-center">
           <div className="col-lg-6">
-            <span className="velocity-badge">
+            {/* <span className="reg-badge">
               {velocityContent.badge}
-            </span>
+            </span> */}
             <h2 className="whitebg-h2">
               {velocityContent.headingMain}
               <br />

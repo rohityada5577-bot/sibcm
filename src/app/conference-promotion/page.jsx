@@ -3,6 +3,8 @@ import PromotionMethodology from "@/components/Promotion/PromotionMethodology";
 import RegistrationGrowthSection from "@/components/Promotion/RegistrationGrowthSection";
 import DigitalChannelsSection from "@/components/Promotion/DigitalChannelsSection";
 import AttendanceChallengesSection from "@/components/Promotion/AttendanceChallengesSection";
+import { conferencePromotionFaqData   } from "@/components/Promotion/data";
+
 
 
 
@@ -18,7 +20,7 @@ export default function Page() {
       <RegistrationGrowthSection />
       <DigitalChannelsSection />
       <AttendanceChallengesSection />
-      <FaqSection />
+      <FaqSection  data={conferencePromotionFaqData } />
     </>
   );
 }

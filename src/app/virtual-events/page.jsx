@@ -4,6 +4,7 @@ import VirtualPromotionSection from "@/components/virtualevent/VirtualPromotionS
 import WebinarParticipationSection from "@/components/virtualevent/WebinarParticipationSection";
 
 import VirtualMarketingSection from "@/components/virtualevent/VirtualMarketingSection";
+import { virtualConferenceMarketingFaqData } from "@/components/virtualevent/data";
 
 import FaqSection from "@/components/common/FaqSection";
 
@@ -20,7 +21,7 @@ export default function Page() {
       
     
         
-          <FaqSection />
+          <FaqSection  data={virtualConferenceMarketingFaqData}/>
          
        
      

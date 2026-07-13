@@ -7,6 +7,7 @@ import SeoMarketingSection from "@/components/services/SeoMarketingSection";
 import MarketingChannels from "@/components/services/MarketingChannels";
 import CustomMarketingPlans from "@/components/services/CustomMarketingPlans";
 import ResultsSection from "@/components/services/ResultsSection";
+import { conferenceMarketingServicesFaqData  } from "@/components/services/data";
 
 
 
@@ -21,12 +22,11 @@ export default function Page() {
       <StrategySection />
        <RegistrationGrowthSection />
           <SeoMarketingSection />
-      {/* <MarketingChannelsSection /> */}
       <MarketingChannels />
       <CustomMarketingPlans />
        <ResultsSection />
 
-      <FaqSection />
+      <FaqSection  data={conferenceMarketingServicesFaqData}/>
    
      
     

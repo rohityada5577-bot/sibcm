@@ -6,6 +6,7 @@ import ConversionRateSection from "@/components/registration-marketing/Conversio
 import RegistrationPageOptimization from "@/components/registration-marketing/RegistrationPageOptimization";
 import DropOffSection from "@/components/registration-marketing/DropOffSection";
 import RegistrationMarketingSection from "@/components/registration-marketing/RegistrationMarketingSection";
+import { conferenceRegistrationMarketingFaqData   } from "@/components/registration-marketing/data";
 
 
 
@@ -24,7 +25,7 @@ export default function Page() {
        
         
         
-        <FaqSection />
+        <FaqSection data={conferenceRegistrationMarketingFaqData } />
    
      
     

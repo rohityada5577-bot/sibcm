@@ -19,9 +19,9 @@ export default function StrategySection() {
         {/* Header */}
         <div className="strategy-header text-center mx-auto">
 
-          <span className="strategy-badge">
+          {/* <span className="strategy-badge">
             {strategyContent.badge}
-          </span>
+          </span> */}
 
           <h2 className="strategy-title">
             {strategyContent.headingMain}

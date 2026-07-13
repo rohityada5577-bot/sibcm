@@ -18,9 +18,9 @@ export default function RegistrationsSection() {
         <div className="row align-items-center">
 
           <div className="col-lg-7">
-            <span className="reg-badge">
+            {/* <span className="reg-badge">
               {registrationsNeonContent.badge}
-            </span>
+            </span> */}
 
             <h2 className="reg-title">
               {registrationsNeonContent.headingMain}

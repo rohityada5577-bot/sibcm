@@ -18,9 +18,9 @@ export default function WhyChoose() {
 
         <div className="whychoose-header">
 
-          <span className="whychoose-badge">
+          {/* <span className="whychoose-badge">
             {whyChooseDossierContent.badge}
-          </span>
+          </span> */}
 
           <h2 className="whychoose-title">
             {whyChooseDossierContent.headingMain}

@@ -7,6 +7,7 @@ import MobileConferenceSection from "@/components/event-website-design/MobileCon
 import EventFunnelChecklist from "@/components/event-website-design/EventFunnelChecklist";
 import EventWebsiteMatrix from "@/components/event-website-design/EventWebsiteMatrix";
 import WebsiteDesignImpactSection from "@/components/event-website-design/WebsiteDesignImpactSection";
+import { conferenceWebsiteDesignFaqData  } from "@/components/event-website-design/data";
 
 
 
@@ -25,7 +26,7 @@ export default function Page() {
          <WebsiteDesignImpactSection />
         
         
-        <FaqSection />
+        <FaqSection  data={conferenceWebsiteDesignFaqData }/>
    
      
     

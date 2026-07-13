@@ -4,6 +4,7 @@ import SpeakerPromotionSection from "@/components/speaker-marketing/SpeakerPromo
 import SpeakerAuthoritySection from "@/components/speaker-marketing/SpeakerAuthoritySection";
 import CredibilityAudienceSection from "@/components/speaker-marketing/CredibilityAudienceSection";
 import SpeakerImpactSection from "@/components/speaker-marketing/SpeakerImpactSection";
+import { conferenceSpeakerMarketingFaqData } from "@/components/speaker-marketing/data";
 
 
 
@@ -24,7 +25,7 @@ export default function Page() {
        
         
         
-        <FaqSection />
+        <FaqSection    data={conferenceSpeakerMarketingFaqData}/>
    
      
     

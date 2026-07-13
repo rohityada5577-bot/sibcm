@@ -1,180 +1,4 @@
 
-.hero-section {
-  position: relative;
-  min-height: 100vh;
-  overflow: hidden;
-  background: #050816;
-  display: flex;
-  align-items: center;
-}
-
-.hero-gradient-bg {
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(circle at 20% 20%, rgba(99,102,241,.25), transparent 35%),
-    radial-gradient(circle at 80% 30%, rgba(59,130,246,.18), transparent 35%),
-    radial-gradient(circle at 50% 80%, rgba(168,85,247,.15), transparent 40%),
-    linear-gradient(135deg,#050816 0%,#0b1023 50%,#111827 100%);
-}
-
-.hero-content {
-  position: relative;
-  z-index: 2;
-  animation: fadeUp 0.8s ease;
-}
-
-.hero-badge {
-  display: inline-block;
-  padding: 10px 18px;
-  border-radius: 50px;
-  background: rgba(99,102,241,.12);
-  border: 1px solid rgba(99,102,241,.25);
-  color: #a5b4fc;
-  font-size: 13px;
-  font-weight: 600;
-  margin-bottom: 25px;
-}
-
-/* .hero-title {
-  font-size: clamp(3rem, 6vw, 5.5rem);
-  font-weight: 800;
-  line-height: 1.1;
-  color: #fff;
-  margin-bottom: 25px;
-} */
-
-.gradient-heading {
-  background: linear-gradient(
-    90deg,
-    #ffffff,
-    #a5b4fc,
-    #60a5fa,
-    #22d3ee
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.hero-description {
-  font-size: 1.15rem;
-  color: #9ca3af;
-  max-width: 620px;
-  line-height: 1.8;
-  margin-bottom: 35px;
-}
-
-.hero-kpis {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  margin-bottom: 40px;
-}
-
-.kpi-badge {
-  padding: 12px 18px;
-  border-radius: 50px;
-  background: rgba(255,255,255,.05);
-  border: 1px solid rgba(255,255,255,.08);
-  color: #fff;
-  font-weight: 600;
-}
-
-.hero-actions {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.hero-btn-primary {
-  border: none;
-  padding: 15px 32px;
-  border-radius: 12px;
-  font-weight: 700;
-  color: #fff;
-  background: linear-gradient(135deg,#6366f1,#8b5cf6);
-  transition: .3s;
-}
-
-.hero-btn-primary:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 15px 40px rgba(99,102,241,.35);
-}
-
-.hero-btn-secondary {
-  padding: 15px 32px;
-  border-radius: 12px;
-  color: #fff;
-  background: rgba(255,255,255,.05);
-  border: 1px solid rgba(255,255,255,.1);
-  backdrop-filter: blur(10px);
-}
-
-.hero-visual {
-  position: relative;
-  z-index: 2;
-  animation: fadeRight 1s ease;
-}
-
-.glass-card {
-  padding: 15px;
-  border-radius: 30px;
-  background: rgba(255,255,255,.05);
-  border: 1px solid rgba(255,255,255,.08);
-  backdrop-filter: blur(20px);
-  box-shadow: 0 25px 60px rgba(0,0,0,.35);
-}
-
-.floating-image {
-  animation: floating 6s ease-in-out infinite;
-}
-
-@keyframes floating {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-18px); }
-  100% { transform: translateY(0px); }
-}
-
-@keyframes fadeUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes fadeRight {
-  from {
-    opacity: 0;
-    transform: translateX(60px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@media (max-width: 991px) {
-  .hero-section {
-    padding: 100px 0;
-    text-align: center;
-  }
-
-  .hero-actions {
-    justify-content: center;
-  }
-
-  .hero-kpis {
-    justify-content: center;
-  }
-
-  .hero-visual {
-    margin-top: 50px;
-  }
-}
 
 /**SECTION 2 CSSS**/
 
@@ -323,164 +147,378 @@
 
 /**SECTION 3 HOMPAGE**/
 
+/* ===========================
+   SECTION
+=========================== */
 .registrations-section {
   position: relative;
   overflow: hidden;
-  padding:40px;
-  background: linear-gradient(
-    135deg,
-    #050816 0%,
-    #0b1023 50%,
-    #111827 100%
-  );
+  padding: 40px 0;
+
+  background:
+    radial-gradient(circle at top left,
+      rgba(59,130,246,.25),
+      transparent 35%),
+
+    radial-gradient(circle at bottom right,
+      rgba(6,182,212,.20),
+      transparent 40%),
+
+    linear-gradient(
+      135deg,
+      #020617 0%,
+      #07122b 30%,
+      #0f172a 60%,
+      #1e3a8a 100%
+    );
 }
+
+/* ===========================
+   BACKGROUND EFFECTS
+=========================== */
 
 .bg-grid-pattern {
   position: absolute;
   inset: 0;
+
   background-image:
-    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
-  background-size: 40px 40px;
+    linear-gradient(
+      rgba(37,99,235,.05) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(37,99,235,.05) 1px,
+      transparent 1px
+    );
+
+  background-size: 60px 60px;
+
+  opacity: .4;
+}
+
+.neon-orb-1,
+.neon-orb-2 {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(90px);
+  pointer-events: none;
 }
 
 .neon-orb-1 {
-  position: absolute;
-  top: -150px;
-  left: -150px;
-  width: 450px;
-  height: 450px;
-  border-radius: 50%;
-  background: rgba(99,102,241,.15);
-  filter: blur(120px);
+  width: 400px;
+  height: 400px;
+
+  top: -100px;
+  left: -100px;
+
+  background: rgba(37,99,235,.15);
+
+  animation: floatOrb 12s ease-in-out infinite;
 }
 
 .neon-orb-2 {
-  position: absolute;
-  bottom: -150px;
-  right: -150px;
-  width: 450px;
-  height: 450px;
-  border-radius: 50%;
-  background: rgba(236,72,153,.12);
-  filter: blur(120px);
+  width: 350px;
+  height: 350px;
+
+  bottom: -100px;
+  right: -100px;
+
+  background: rgba(6,182,212,.15);
+
+  animation: floatOrb 10s ease-in-out infinite;
 }
 
+@keyframes floatOrb {
+  50% {
+    transform:
+      translateY(-30px)
+      scale(1.08);
+  }
+}
+
+/* ===========================
+   HEADER
+=========================== */
+
 .reg-badge {
-  display: inline-block;
-  padding: 10px 18px;
-  border-radius: 50px;
-  background: rgba(255,255,255,.05);
-  border: 1px solid rgba(255,255,255,.08);
-  color: #a78bfa;
-  font-size: 13px;
+  display: inline-flex;
+  align-items: center;
+
+  padding: 10px 20px;
+
+  border-radius: 999px;
+
+  background: #eef4ff;
+
+  color: #2563eb;
+
+  font-size: 14px;
   font-weight: 700;
+
   margin-bottom: 20px;
 }
 
 .reg-title {
-  font-size: clamp(2.8rem, 5vw, 4.5rem);
-  font-weight: 800;
-  color: #fff;
-  line-height: 1.1;
+  font-size: clamp(42px,5vw,72px);
+
+  font-weight: 900;
+
+  line-height: 1.05;
+
+  color: #ffffff;
+
+  margin-bottom: 0;
 }
 
 .reg-gradient {
+  display: block;
+
   background: linear-gradient(
     90deg,
-    #8b5cf6,
-    #ec4899,
-    #60a5fa
+    #2563eb,
+    #06b6d4,
+    #2563eb
   );
+
+  background-size: 300% auto;
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+
+  animation: gradientFlow 8s linear infinite;
+}
+
+@keyframes gradientFlow {
+  to {
+    background-position: 300% center;
+  }
 }
 
 .reg-description {
-  color: #9ca3af;
-  font-size: 1.1rem;
-  line-height: 1.8;
+  font-size: 18px;
+
+  line-height: 1.9;
+
+  color: rgba(255,255,255,.75);
+
+  max-width: 550px;
+
+  margin-left: auto;
 }
 
+/* ===========================
+   BENTO CARDS
+=========================== */
+
 .glass-bento-card {
-  height: 100%;
-  padding: 35px;
-  border-radius: 24px;
-  background: rgba(255,255,255,.05);
-  border: 1px solid rgba(255,255,255,.08);
-  backdrop-filter: blur(15px);
-  transition: .4s;
   position: relative;
+
+  height: 100%;
+
+  background: rgba(255,255,255,.9);
+
+  backdrop-filter: blur(15px);
+
+  border: 1px solid rgba(255,255,255,.6);
+
+  border-radius: 30px;
+
+  padding: 35px;
+
   overflow: hidden;
+
+  transition: all .45s ease;
+
+  box-shadow:
+    0 10px 25px rgba(15,23,42,.04),
+    0 25px 60px rgba(15,23,42,.08);
 }
+
+/* Premium top border */
 
 .glass-bento-card::before {
   content: "";
+
   position: absolute;
-  left: 0;
+
   top: 0;
+  left: 0;
+
   width: 100%;
-  height: 3px;
+  height: 5px;
+
   background: linear-gradient(
     90deg,
-    #8b5cf6,
-    #ec4899
+    #2563eb,
+    #06b6d4,
+    #ef4444
   );
+
+  transform: scaleX(0);
+
+  transition: .5s ease;
+
+  transform-origin: left;
 }
+
+.glass-bento-card:hover::before {
+  transform: scaleX(1);
+}
+
+/* Hover */
 
 .glass-bento-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 25px 50px rgba(0,0,0,.3);
+  transform:
+    translateY(-12px);
+
+  box-shadow:
+    0 20px 50px rgba(37,99,235,.12),
+    0 35px 80px rgba(15,23,42,.12);
 }
+
+/* ===========================
+   CARD NUMBER
+=========================== */
 
 .card-number {
-  display: inline-block;
-  padding: 8px 12px;
-  border-radius: 8px;
-  background: rgba(139,92,246,.15);
-  color: #a78bfa;
-  font-weight: 700;
-  font-size: 13px;
-}
+  width: 58px;
+  height: 58px;
 
-.card-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 18px;
+
+  background: linear-gradient(
+    135deg,
+    #2563eb,
+    #06b6d4
+  );
+
   color: #fff;
-  font-size: 1.35rem;
-  font-weight: 700;
-  margin: 25px 0 15px;
+
+  font-size: 18px;
+  font-weight: 800;
+
+  box-shadow:
+    0 15px 30px rgba(37,99,235,.25);
 }
 
-.card-desc {
-  color: #9ca3af;
-  line-height: 1.8;
-}
+/* ===========================
+   ARROW ICON
+=========================== */
 
 .arrow-icon {
-  color: #8b5cf6;
-  opacity: .4;
-  transition: .3s;
+  color: #2563eb;
+
+  transition: .4s ease;
 }
 
 .glass-bento-card:hover .arrow-icon {
-  opacity: 1;
-  transform: translate(4px,-4px);
+  transform:
+    translateX(5px)
+    translateY(-5px);
 }
 
+/* ===========================
+   CARD TITLE
+=========================== */
+
+.card-title {
+  font-size: 28px;
+
+  font-weight: 800;
+
+  line-height: 1.25;
+
+  color: #0f172a;
+
+  margin-bottom: 15px;
+}
+
+/* ===========================
+   CARD TEXT
+=========================== */
+
+.card-desc {
+  font-size: 17px;
+
+  line-height: 1.9;
+
+  color: #64748b;
+
+  margin-bottom: 0;
+}
+
+/* ===========================
+   STAGGER ANIMATION
+=========================== */
+
+.glass-bento-card {
+  animation:
+    fadeUp .8s ease both;
+}
+
+@keyframes fadeUp {
+
+  from {
+    opacity: 0;
+    transform:
+      translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform:
+      translateY(0);
+  }
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
 @media (max-width: 991px) {
+
   .registrations-section {
     padding: 80px 0;
   }
 
   .reg-title {
-    font-size: 2.5rem;
+    text-align: center;
+    font-size: 42px;
+  }
+
+  .reg-description {
+    text-align: center;
+    margin: 20px auto 40px;
   }
 
   .glass-bento-card {
-    padding: 25px;
+    padding: 28px;
+  }
+
+  .card-title {
+    font-size: 24px;
   }
 }
 
+@media (max-width: 576px) {
 
+  .reg-title {
+    font-size: 34px;
+  }
+
+  .card-title {
+    font-size: 22px;
+  }
+
+  .card-desc {
+    font-size: 15px;
+  }
+}
 /* =========================
    SECTION
 ========================= */
