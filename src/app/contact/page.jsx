@@ -1,7 +1,31 @@
-export default function ContactPage() {
+
+import FaqSection from "@/components/common/FaqSection";
+import ContactHero from "@/components/contact/ContactHero";
+import FreeConsultation from "@/components/contact/FreeConsultation";
+import ProposalSection from "@/components/contact/ProposalSection";
+import ExpertsSection from "@/components/contact/ExpertsSection";
+import GrowthPlanSection from "@/components/contact/GrowthPlanSection";
+import ContactSupport from "@/components/contact/ContactSupport";
+
+
+
+
+export default function Page() {
   return (
-    <main>
-      <h1>Contact Us</h1>
-    </main>
+    <>
+         
+      <ContactHero />
+      <FreeConsultation />
+      <ProposalSection />
+      <ExpertsSection />
+      <GrowthPlanSection />
+      <ContactSupport />
+        
+        <FaqSection />
+        
+   
+     
+    
+    </>
   );
 }

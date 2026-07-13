@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import "./nav.css";
 
 export default function Navbar() {
   useEffect(() => {
@@ -43,235 +44,178 @@ export default function Navbar() {
     { name: "FAQs", href: "/faqs" },
   ];
 
-  return (
-    <>
-      <motion.nav
-        className="navbar navbar-expand-xl navbar-light bg-white shadow-sm sticky-top"
-        initial={{ y: -80, opacity: 0 }}
-        animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 0.6 }}
-      >
-        <div className="container">
+return (
+  <>
+    <motion.nav
+      className="cmw-header"
+      initial={{ y: -50, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.5 }}
+    >
+      <div className="cmw-header-wrap">
+        <Link href="/" className="cmw-brand">
+          <Image
+            src="/cmwlogo.webp"
+            alt="CMW Logo"
+            width={180}
+            height={60}
+            priority
+          />
+        </Link>
 
-          <Link href="/" className="navbar-brand">
-            <motion.div whileHover={{ scale: 1.05 }}>
-              <Image
-                src="/cmwlogo.webp"
-                alt="CMW Logo"
-                width={170}
-                height={50}
-                priority
-              />
-            </motion.div>
-          </Link>
+        <button
+          className="cmw-toggle"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#cmwSidebar"
+          aria-controls="cmwSidebar"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </motion.nav>
 
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#mainNavbar"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
+    <div
+      className="offcanvas offcanvas-end cmw-sidebar"
+      tabIndex="-1"
+      id="cmwSidebar"
+      aria-labelledby="cmwSidebarLabel"
+    >
+      <div className="offcanvas-header">
+        <h5 className="offcanvas-title" id="cmwSidebarLabel">
+          Conference Marketing
+        </h5>
 
-          <div
-            className="collapse navbar-collapse justify-content-end"
-            id="mainNavbar"
-          >
-            <ul className="navbar-nav align-items-xl-center">
+        <button
+          type="button"
+          className="btn-close btn-close-white"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
 
-              <li className="nav-item">
-                <Link href="/" className="nav-link nav-link-custom">
-                  Home
-                </Link>
-              </li>
+      <div className="offcanvas-body">
+        <ul className="cmw-menu-list">
 
-              <li className="nav-item">
-                <Link href="/about-us" className="nav-link nav-link-custom">
-                  About Us
-                </Link>
-              </li>
+          <li>
+            <Link href="/" className="cmw-main-link">
+              Home
+            </Link>
+          </li>
 
-              {/* SERVICES */}
-              <li className="nav-item dropdown">
-                <a
-                  href="/services"
-                  className="nav-link dropdown-toggle nav-link-custom"
-                  data-bs-toggle="dropdown"
-                >
-                  Services
-                </a>
+          <li>
+            <Link href="/about-us" className="cmw-main-link">
+              About Us
+            </Link>
+          </li>
 
-                <ul className="dropdown-menu mega-dropdown">
-                  {services.map((item) => (
-                    <li key={item.href}>
-                      <Link href={item.href} className="dropdown-item">
-                        {item.name}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </li>
+          {/* SERVICES */}
 
-              {/* INDUSTRIES */}
-              <li className="nav-item dropdown">
-                <a
-                  href="#"
-                  className="nav-link dropdown-toggle nav-link-custom"
-                  data-bs-toggle="dropdown"
-                >
-                  Industries
-                </a>
+          <li>
+            <div className="accordion cmw-accordion" id="serviceMenu">
+              <div className="accordion-item">
 
-                <ul className="dropdown-menu mega-dropdown">
-                  {industries.map((item) => (
-                    <li key={item.href}>
-                      <Link href={item.href} className="dropdown-item">
-                        {item.name}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </li>
-
-              {/* RESOURCES */}
-              <li className="nav-item dropdown">
-                <a
-                  href="#"
-                  className="nav-link dropdown-toggle nav-link-custom"
-                  data-bs-toggle="dropdown"
-                >
-                  Resources
-                </a>
-
-                <ul className="dropdown-menu mega-dropdown">
-                  {resources.map((item) => (
-                    <li key={item.href}>
-                      <Link href={item.href} className="dropdown-item">
-                        {item.name}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </li>
-
-              <li className="nav-item">
-                <Link href="/contact" className="nav-link nav-link-custom">
-                  Contact
-                </Link>
-              </li>
-
-              <li className="nav-item ms-xl-3">
-                <motion.div
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <Link
-                    href="/get-quote"
-                    className="btn nav-btn px-4"
+                <h2 className="accordion-header">
+                  <button
+                    className="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#serviceCollapse"
                   >
-                    Get Quote
-                  </Link>
-                </motion.div>
-              </li>
+                    Services
+                  </button>
+                </h2>
 
-            </ul>
-          </div>
-        </div>
-      </motion.nav>
+                <div
+                  id="serviceCollapse"
+                  className="accordion-collapse collapse"
+                >
+                  <div className="accordion-body">
+                    {services.map((item) => (
+                      <Link
+                        key={item.href}
+                        href={item.href}
+                        className="cmw-sub-link"
+                      >
+                        {item.name}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
 
-      <style jsx>{`
-        .nav-link-custom {
-          font-weight: 600;
-          color: #111827 !important;
-          margin: 0 10px;
-          position: relative;
-          transition: all 0.3s ease;
-        }
+              </div>
+            </div>
+          </li>
 
-        .nav-link-custom:hover {
-          color: #4f46e5 !important;
-        }
+          {/* INDUSTRIES */}
 
-        .nav-link-custom::after {
-          content: "";
-          position: absolute;
-          width: 0;
-          height: 2px;
-          left: 0;
-          bottom: 0;
-          background: linear-gradient(
-            90deg,
-            #4f46e5,
-            #06b6d4
-          );
-          transition: 0.3s;
-        }
+         <li>
+          <Link
+            href="/industries"
+            className="cmw-main-link"
+          >
+            Industries
+          </Link>
+        </li>
 
-        .nav-link-custom:hover::after {
-          width: 100%;
-        }
+          {/* RESOURCES */}
 
-        .mega-dropdown {
-          border: none;
-          border-radius: 16px;
-          min-width: 280px;
-          padding: 10px;
-          box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
-        }
+          <li>
+            <div className="accordion cmw-accordion" id="resourceMenu">
+              <div className="accordion-item">
 
-        .dropdown-item {
-          padding: 12px 15px;
-          border-radius: 10px;
-          transition: all 0.3s ease;
-        }
+                <h2 className="accordion-header">
+                  <button
+                    className="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#resourceCollapse"
+                  >
+                    Resources
+                  </button>
+                </h2>
 
-        .dropdown-item:hover {
-          background: #eef2ff;
-          color: #4f46e5;
-          transform: translateX(4px);
-        }
+                <div
+                  id="resourceCollapse"
+                  className="accordion-collapse collapse"
+                >
+                  <div className="accordion-body">
+                    {resources.map((item) => (
+                      <Link
+                        key={item.href}
+                        href={item.href}
+                        className="cmw-sub-link"
+                      >
+                        {item.name}
+                      </Link>
+                    ))}
+                  </div>
+                </div>
 
-        .nav-btn {
-          background: linear-gradient(
-            135deg,
-            #4f46e5,
-            #06b6d4
-          );
-          color: #fff;
-          border-radius: 50px;
-          font-weight: 600;
-          border: none;
-        }
+              </div>
+            </div>
+          </li>
 
-        .nav-btn:hover {
-          color: #fff;
-        }
+          <li>
+            <Link href="/contact" className="cmw-main-link">
+              Contact
+            </Link>
+          </li>
 
-        @media (max-width: 1199px) {
-          .navbar-nav {
-            padding-top: 20px;
-          }
+        </ul>
 
-          .nav-link-custom {
-            margin: 5px 0;
-          }
-
-          .mega-dropdown {
-            box-shadow: none;
-            border: none;
-            padding-left: 15px;
-          }
-
-          .nav-btn {
-            width: 100%;
-            margin-top: 15px;
-          }
-        }
-      `}</style>
-    </>
-  );
-
+        <Link
+          href="/get-quote"
+          className="cmw-quote-btn"
+        >
+          Get In Touch
+        </Link>
+      </div>
+    </div>
+  </>
+);
   
 }
 

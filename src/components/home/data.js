@@ -225,8 +225,8 @@ export const channelsContent = {
 
 export const whyChooseDossierContent = {
   badge: "Operational Blueprint",
-  headingMain: "We Are Conference",
-  headingGradient: "Growth Specialists",
+  headingMain: "Why Choose Our Conference",
+  headingGradient: " Growth Agency",
   description: "We are not a general marketing agency that occasionally handles events. We are conference growth specialists. Every framework, tool, and tactic we use has been built and refined specifically for the event industry.",
   pillars: [
     { index: "01", tag: "SPECIALIZATION", title: "Niche Expertise", description: "100% focused on conference and event marketing", accentColor: "#6366f1" },
